@@ -1,8 +1,8 @@
 const colors = {
-    primary: '#FFFFFF',   
-    secondary: '#E5E5E5',
-    Tertiary: '#FF6060',
-    quaternary: '#000000'
+    primary: '#FFFFFF',   //White 
+    secondary: '#E5E5E5', // light grey
+    tertiary: '#FF6060',  // Salmon
+    quaternary: '#000000'  // Black
 }
 
 export default colors
