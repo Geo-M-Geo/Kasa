@@ -1,9 +1,10 @@
 // import Header from "../../components/Header"
+import DisplayCards from "../../components/AllCards"
 
 function Home(){
     return ( 
         <div>
-            {/* <Header /> */}
+            <DisplayCards />
         </div>
     )
 }

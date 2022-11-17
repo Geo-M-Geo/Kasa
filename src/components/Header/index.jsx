@@ -3,6 +3,8 @@ import logo_desktop from '../../assets/logo_desktop.png'
 import styled from 'styled-components'
 import colors from '../../utils/styles/colors'
 
+
+
 const HomeContainer = styled.nav`
     display: flex;
     flex-direction: raw;
