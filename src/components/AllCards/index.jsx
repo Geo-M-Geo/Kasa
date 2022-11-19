@@ -2,24 +2,29 @@ import { appartements } from '../../datas/appartements'
 import styled from 'styled-components'
 import colors from '../../utils/styles/colors'
 
-const AppartementsContainer = styled.div`
-    margin: 40px 100px 0 100px;
+const AppartementsContainer = styled.ul`
+max-width: 1240px;
+    
+`
+const Cards = styled.div`
+    margin: 40px 100px 40px 100px;
+    padding: inherit;
+    list-style:none;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
     border-radius: 25px;
-    // padding: 50px: 0 50px 0;
     background-color: ${colors.secondary}
 `
 const AppartementTitle = styled.p`
     position: absolute;
     color: ${colors.quaternary}
 `
-const PictureContainer = styled.div`
-border-radius: 10px;
-padding:56px 0 56px 0;
-width: 340px;
+const PictureContainer = styled.li`
+    border-radius: 10px;
+    padding:56px 0 56px 0;
+    width: 340px;
     height: 340px
 `
 const AppartementPicture = styled.img`
@@ -34,12 +39,14 @@ const AppartementPicture = styled.img`
 function DisplayCards() {
     return (
         <AppartementsContainer>
-            {appartements.map(({ id, title, cover }) => 
-                <PictureContainer key={id}>
-                    <AppartementTitle>{title}</AppartementTitle>
-                    <AppartementPicture src={cover} alt="Cover phot" />
-                </PictureContainer>
-            )}
+            <Cards>
+                {appartements.map(({ id, title, cover }) => 
+                    <PictureContainer key={id}>
+                        <AppartementTitle>{title}</AppartementTitle>
+                        <AppartementPicture src={cover} alt="Cover phot" />
+                    </PictureContainer>
+                )}
+            </Cards>
         </AppartementsContainer>
 
     )
