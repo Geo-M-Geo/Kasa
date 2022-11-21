@@ -3,10 +3,12 @@ import styled from 'styled-components'
 import colors from '../../utils/styles/colors'
 
 const AppartementsContainer = styled.ul`
-max-width: 1240px;
-    
-`
-const Cards = styled.div`
+    padding: inherit;
+    display:flex;
+    justify-content: center;
+    `
+    const Cards = styled.div`
+    width: 1240px;
     margin: 40px 100px 40px 100px;
     padding: inherit;
     list-style:none;
@@ -19,7 +21,10 @@ const Cards = styled.div`
 `
 const AppartementTitle = styled.p`
     position: absolute;
-    color: ${colors.quaternary}
+    color: ${colors.primary}
+    overflow-wrap: break-word;
+    max-width: 300px;
+    
 `
 const PictureContainer = styled.li`
     border-radius: 10px;

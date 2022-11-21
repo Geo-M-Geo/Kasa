@@ -3,14 +3,14 @@ import logo_desktop from '../../assets/logo_desktop.png'
 import styled from 'styled-components'
 import colors from '../../utils/styles/colors'
 
-
-
 const HomeContainer = styled.nav`
     display: flex;
     flex-direction: raw;
     justify-content: space-between;
     padding: 40px 100px 0 100px;
     align-items: center;
+    margin: auto;
+    max-width: 1240px;
 `
 
 const HomeLogo = styled.img `
