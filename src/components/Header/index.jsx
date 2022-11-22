@@ -11,6 +11,7 @@ const HomeContainer = styled.nav`
     align-items: center;
     margin: auto;
     max-width: 1240px;
+
     @media only screen and (max-width: 750px) {
         padding: 20px 20px 0 20px;
     };
@@ -26,6 +27,7 @@ const LinkContainer = styled.div`
     width: 200px;
     display: flex;
     justify-content: space-between;
+
     @media only screen and (max-width: 520px) {
         text-transform: uppercase;
         margin-left: 50px;
@@ -40,6 +42,7 @@ const LinksStyle = styled(Link)`
     :hover {
         text-decoration: underline;
     };
+    
     @media only screen and (max-width: 520px) {
         font-size: 12px;
         font-weight: 500;

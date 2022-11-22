@@ -17,7 +17,11 @@ const AppartementsContainer = styled.ul`
     flex-wrap: wrap;
     justify-content: space-around;
     border-radius: 25px;
-    background-color: ${colors.secondary}
+    background-color: ${colors.secondary};
+    @media only screen and (max-width: 895px) {
+        background-color: ${colors.primary};
+    };
+    
 `
 const AppartementTitle = styled.p`
     position: absolute;
@@ -34,12 +38,20 @@ const PictureContainer = styled.li`
     padding:56px 0 56px 0;
     width: 340px;
     height: 340px;
+    @media only screen and (max-width: 1300px) {
+        padding: 30px 30px 30px 30px;
+    };
+    
 `
 const AppartementPicture = styled.img`
     // position: relative;
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    @media only screen and (max-width: 1300px) {
+        width:335px;
+        height: 255px;
+    };
 `
 
 
