@@ -9,7 +9,7 @@ const AppartementsContainer = styled.ul`
     `
     const Cards = styled.div`
     width: 1240px;
-    margin: 40px 100px 40px 100px;
+    margin: 0 100px 40px 100px;
     padding: inherit;
     list-style:none;
     display: flex;
@@ -23,7 +23,7 @@ const AppartementTitle = styled.p`
     position: absolute;
     color: ${colors.primary}
     overflow-wrap: break-word;
-    max-width: 300px;
+    max-width: 300px;   
     
 `
 const PictureContainer = styled.li`
@@ -37,7 +37,6 @@ const AppartementPicture = styled.img`
     width: 100%;
     height: 100%;
     border-radius: 10px;
-
 `
 
 

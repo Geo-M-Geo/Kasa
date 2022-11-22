@@ -5,7 +5,7 @@ import colors from '../../utils/styles/colors'
 const BannerContainer = styled.div`
     display:flex;
     justify-content: center;
-    margin: 43px 40px 60px 40px;
+    margin: 43px 100px 60px 100px;
     max-height: 223px;
     align-items: center;
 `
