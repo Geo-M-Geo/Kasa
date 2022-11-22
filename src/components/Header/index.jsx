@@ -11,15 +11,26 @@ const HomeContainer = styled.nav`
     align-items: center;
     margin: auto;
     max-width: 1240px;
+    @media only screen and (max-width: 750px) {
+        padding: 20px 20px 0 20px;
+    };
 `
 
 const HomeLogo = styled.img `
-    // height: 68px;
+@media only screen and (max-width: 750px) {
+    max-width: 100%;
+    height: auto;
+};
 `
 const LinkContainer = styled.div`
     width: 200px;
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: 520px) {
+        text-transform: uppercase;
+        margin-left: 50px;
+        padding-left: 0px;
+    };
 `
 
 const LinksStyle = styled(Link)`
@@ -28,7 +39,11 @@ const LinksStyle = styled(Link)`
     text-decoration: none;
     :hover {
         text-decoration: underline;
-      }
+    };
+    @media only screen and (max-width: 520px) {
+        font-size: 12px;
+        font-weight: 500;
+    };
 `
 
 

@@ -21,16 +21,19 @@ const AppartementsContainer = styled.ul`
 `
 const AppartementTitle = styled.p`
     position: absolute;
-    color: ${colors.primary}
+    color: ${colors.primary};
     overflow-wrap: break-word;
     max-width: 300px;   
-    
+    bottom: 70px;
+    left: 20px;
+    font-size: 18px;
 `
 const PictureContainer = styled.li`
+    position: relative;
     border-radius: 10px;
     padding:56px 0 56px 0;
     width: 340px;
-    height: 340px
+    height: 340px;
 `
 const AppartementPicture = styled.img`
     // position: relative;
