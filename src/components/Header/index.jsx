@@ -11,7 +11,9 @@ const HomeContainer = styled.nav`
     align-items: center;
     margin: auto;
     max-width: 1240px;
-
+    @media only screen and (max-width: 1024px) {
+        padding: 20px 50px 0 50px;
+    };
     @media only screen and (max-width: 750px) {
         padding: 20px 20px 0 20px;
     };

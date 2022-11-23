@@ -5,11 +5,14 @@ import colors from '../../utils/styles/colors'
 const BannerContainer = styled.div`
     display:flex;
     justify-content: center;
-    margin: 43px 100px 60px 100px;
+    padding: 43px 100px 60px 100px;
     max-height: 223px;
     align-items: center;
+    @media only screen and (max-width: 1024px) {
+        padding: 30px 50px 0 50px;
+    };
     @media only screen and (max-width: 750px) {
-        margin: 20px 20px 0 20px;
+        padding: 20px 20px 0 20px;
     };
     @media only screen and (max-width: 500px) {
         justify-content: flex-start;
@@ -19,8 +22,12 @@ const BannerImage = styled.img`
     border-radius: 25px;
     max-width: 100%;
     height: auto;
+    object-fit: cover;
+    filter: brightness(60%);
     @media only screen and (max-width: 750px) {
         border-radius: 10px;
+        height: 111px;
+        width: 100%;
     };
 `
 const TextBanner = styled.p`
@@ -31,12 +38,14 @@ const TextBanner = styled.p`
     @media only screen and (max-width: 1235px) {
         font-size: 30px;
     };
+
     @media only screen and (max-width: 850px) {
         font-size: 24px;
     };
+    
     @media only screen and (max-width: 500px) {
-        font-size: 15px;
-        width: 200px;
+        // font-size: 15px;
+        width: 217px;
         display: flex;
         flex-direction: column;
         padding-left: 20px;
