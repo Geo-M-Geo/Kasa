@@ -1,11 +1,10 @@
-// import Header from "../../components/Header"
 import DisplayCards from "../../components/AllCards"
-import Banner from "../../components/Banner"
+import HomeBanner from "../../components/Banners/HomeBanner"
 
 function Home(){
     return ( 
         <div>
-            <Banner />
+            <HomeBanner />
             <DisplayCards />
         </div>
     )

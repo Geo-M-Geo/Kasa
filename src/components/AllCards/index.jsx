@@ -31,9 +31,14 @@ const AppartementTitle = styled.p`
     color: ${colors.primary};
     overflow-wrap: break-word;
     max-width: 300px;   
-    bottom: 30px;
+    bottom: 70px;
     left: 30px;
     font-size: 18px;
+
+    @media only screen and (max-width: 600px) {
+        bottom: 30px;
+    };
+
 
     @media only screen and (max-width: 395px) {
         font-size: 15px;
