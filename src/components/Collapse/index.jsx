@@ -3,17 +3,28 @@ import vectorDown from '../../assets/vector_down.png'
 import vectorUp from '../../assets/vector_up.png'
 import styled from 'styled-components'
 import colors from '../../utils/styles/colors'
-import PropTypes from 'prop-types'
+
+const CollapseContainer = styled.div`
+    display: flex; 
+    flex-direction: row;
+    // align-items: center;
+    margin: auto;
+    background-color: ${colors.tertiary};
+    width:1023px;
+`
 
 const CollapseButton = styled.button`
     background-color: ${colors.tertiary};
     display: flex;
-    flex-direction: raw;
+    flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+    padding: auto 18px auto 18px;
 `
 
 const TitleCollapse = styled.h3`
     color: ${colors.primary};
+    font-weight: normal;
 `
 
 const DescriptionOfCollapse = styled.p`
@@ -22,41 +33,38 @@ const DescriptionOfCollapse = styled.p`
 
 const Vector = styled.img`
     color: ${colors.quaternary}
+    align-items: center;
+`
+
+const CollapseTextContainer = styled.div`
+
 `
 
 function Collapse({title, description}) {
 
-    // const { title, description } = props
     const [isOpen, setIsOpen] = useState(false)
 
     return isOpen ? (
-        <div>
+        <CollapseContainer>
             <CollapseButton onClick={() => setIsOpen(false)}>
                 <TitleCollapse>{title}</TitleCollapse>
-                <Vector>{vectorDown}</Vector>
+                <Vector src={vectorDown} />
             </CollapseButton>
-        </div>
+        </CollapseContainer>
     ) : (
-        <div>
+        <CollapseContainer>
+        
+        <CollapseTextContainer>
         <button onClick={() => setIsOpen(true)}>
         <TitleCollapse>{title}</TitleCollapse>
-        {/* <Vector>{vectorUp}</Vector> */}
+        <Vector src={vectorUp} />
         </button>
         <DescriptionOfCollapse>
-            {description}
+        {description}
         </DescriptionOfCollapse>
-        </div>
+        </CollapseTextContainer>
+        </CollapseContainer>
     )
 }
-
-Collapse.propTypes = {
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-  }
-  
-  Collapse.defaultProps = {
-    title: '',
-    description: '',
-  }
 
 export default Collapse
