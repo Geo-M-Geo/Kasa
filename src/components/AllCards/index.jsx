@@ -135,6 +135,7 @@ const AppartementContainer = styled.ul`
     @media only screen and (min-width: 1455px) {
         max-width: 1239px;
         margin: auto;
+        margin-bottom: 40px;
     };
 `
 
