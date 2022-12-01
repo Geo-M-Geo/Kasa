@@ -109,15 +109,33 @@ import colors from '../../utils/styles/colors'
 // `
 const AppartementContainer = styled.ul`
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:space-around;
+    margin: 43px 100px 60px 100px;
+    max-width: 100%;
     border-radius: 25px;
     background-color: ${colors.secondary};
-    margin: 0 100px 40px 100px;
-    padding: inherit;
-    padding: inherit;
     list-style:none;
+    padding: inherit;
+    @media only screen and (max-width: 1024px) {
+        margin: 30px 50px 40px 50px;
+    };
+
+    @media only screen and (max-width: 810px) {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    };
+
+    @media only screen and (max-width: 750px) {
+        margin: 20px 20px 20px 20px;
+        border-radius: 10px;
+    };
+
+    @media only screen and (min-width: 1455px) {
+        max-width: 1239px;
+        margin: auto;
+    };
 `
 
 const PictureContainer = styled.li`
@@ -126,15 +144,44 @@ const PictureContainer = styled.li`
     padding: 56px 0 56px 0;
     width: 340px;
     height: 340px;
-    flex-wrap: wrap;
+    
+    @media only screen and (max-width: 810px) {
+            width: 90%;
+            display:flex;
+            justify-content: center;
+            padding: 40px 0 0 0;
+    };
+    @media only screen and (max-width: 810px) {
+        height: 90%;  
+    };
+
+    @media only screen and (max-width: 500px) {
+        padding: 20px 0 0 0; 
+    };
 `
 
 const AppartementTitle = styled.p`
+    position: absolute;
+    color: ${colors.primary};
+    overflow-wrap: break-word;
+    max-width: 300px;   
+    bottom: 70px;
+    left: 30px;
+    font-size: 18px;
 
+    @media only screen and (max-width: 810px) {
+        bottom: 20px;
+};
 `
 
 const AppartementPicture = styled.img`
-
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    @media only screen and (max-width: 810px) {
+        width: 100%;
+    };
 `
 
 
