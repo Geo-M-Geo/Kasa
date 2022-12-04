@@ -6,11 +6,10 @@ const FooterStyle = styled.div `
     width: 100%;
     left:0;
     background: #000000;
-    // position: absolute;
+    position: absolute;
     bottom: 0;
     display: flex;
     justify-content: center;
-    // align-items: center
 `
 const FooterContents = styled.div `
     display: flex;

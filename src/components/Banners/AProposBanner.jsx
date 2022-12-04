@@ -6,7 +6,7 @@ import AProposMobile from '../../assets/A_propos_mobile.png'
 const BannerContainer = styled.div`
 display:flex;
 justify-content: center;
-padding: 43px 100px 60px 100px;
+padding: 43px 100px 0 100px;
 height: 223px;
 
 @media only screen and (max-width: 1024px) {
