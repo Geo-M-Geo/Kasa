@@ -18,20 +18,20 @@ height: 223px;
 `
 
 const BannerImageDesktop = styled.img`
-border-radius: 25px;
-max-width: 100%;
-// height: auto;
-object-fit: cover;
-display: block;
-
-@media only screen and (max-width: 375px) {
-    display: none; 
-};
+    border-radius: 25px;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.8;
+    @media only screen and (max-width: 375px) {
+        display: none; 
+    };
 `
 
 const BannerImageMobile = styled.img`
     background-image: url();
     display: none;
+    opacity: 0.8;
     @media only screen and (max-width: 375px) {
         display: block;
         border-radius: 10px;

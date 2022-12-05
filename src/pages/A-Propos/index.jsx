@@ -1,12 +1,19 @@
 import AProposBanner from "../../components/Banners/AProposBanner"
-// import { AProposData} from '../../datas/APropos.js'
 import Collapse from '../../components/Collapse'
 import styled from 'styled-components'
 
 const Container = styled.div`
-position: relative;
-height: 880px;
+    height: 880px;
+    margin-bottom: 46px;
 
+@media only screen and (max-width: 750px) {
+    font-size: 16px;
+    height: 500px;
+};
+
+@media only screen and (max-width: 520px) {
+    font-size: 14px;
+};
 `
 function APropos() {
     return ( 

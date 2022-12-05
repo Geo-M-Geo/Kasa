@@ -4,8 +4,6 @@ import vectorUp from '../../assets/vector_up.png'
 import styled from 'styled-components'
 import colors from '../../utils/styles/colors'
 
-
-
 const CollapseContainer = styled.div`
     display: flex; 
     flex-direction: row;
@@ -20,8 +18,7 @@ const CollapseContainer = styled.div`
     @media only screen and (max-width: 750px) {
         padding: 0 20px 0 20px;
         margin-top: 20px;
-    };
-    
+    };   
 `
 
 const CollapseButton = styled.button`
@@ -46,12 +43,12 @@ const TitleCollapse = styled.h3`
     font-size: 24px;
     padding-left: 18px;
 
-    media only screen and (max-width: 750px) {
+    @media only screen and (max-width: 750px) {
         font-size: 16px;
     };
 
     @media only screen and (max-width: 520px) {
-        font-size: 13px;
+        font-size: 14px;
     };
 `
 
@@ -62,9 +59,17 @@ const DescriptionOfCollapse = styled.p`
     color: ${colors.tertiary};
     font-size: 24px;
     border-radius: 5px;
-    padding: 36px 27px 19px 18px;
+    padding: 36px 27px 19px 18px;  
 
-    
+    @media only screen and (max-width: 750px) {
+        font-size: 18px;
+        padding: 25px 27px 28px 18px; 
+    };
+
+    @media only screen and (max-width: 520px) {
+        font-size: 14px;
+        padding: 15px 27px 36px 18px; 
+    };
 `
 
 const Vector = styled.img`
@@ -75,8 +80,6 @@ const Vector = styled.img`
     @media only screen and (max-width: 750px) {
         height: 12px;
         width: 16px;
-
-
     };
 `
 
@@ -109,5 +112,4 @@ function Collapse({title, description}) {
         </CollapseContainer>
     )
 }
-
 export default Collapse

@@ -30,6 +30,16 @@ const TextContent = styled.p `
     color: #FFFFFF;
     font-size: 20px;
     padding-top 20px;
+    
+    @media only screen and (max-width: 750px) {
+        font-size: 16px;
+        height: 500px;
+    };
+    
+    @media only screen and (max-width: 520px) {
+        font-size: 14px;
+        height: 420px;
+    };
 `
 
 function Footer() {
