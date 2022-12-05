@@ -10,10 +10,10 @@ padding: 43px 100px 0 100px;
 height: 223px;
 
 @media only screen and (max-width: 1024px) {
-    padding: 30px 50px 50px 50px;
+    padding: 30px 50px 0 50px;
 };
 @media only screen and (max-width: 750px) {
-    padding: 20px 20px 25px 20px;
+    padding: 20px 20px 0 20px;
 };
 `
 

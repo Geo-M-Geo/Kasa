@@ -4,12 +4,24 @@ import vectorUp from '../../assets/vector_up.png'
 import styled from 'styled-components'
 import colors from '../../utils/styles/colors'
 
+
+
 const CollapseContainer = styled.div`
     display: flex; 
     flex-direction: row;
     margin: auto;
-    width:1023px;
+    max-width:1023px;
     margin-top: 31px;
+    padding: 0 100px 0 100px;
+
+    @media only screen and (max-width: 1024px) {
+        padding: 0 50px 0 50px;
+    };
+    @media only screen and (max-width: 750px) {
+        padding: 0 20px 0 20px;
+        margin-top: 20px;
+    };
+    
 `
 
 const CollapseButton = styled.button`
@@ -20,9 +32,12 @@ const CollapseButton = styled.button`
     align-items: center;
     border: 0;
     width: 100%;
-    // padding: auto 18px auto 18px;
     border-radius: 5px;
     height: 47px;
+
+    @media only screen and (max-width: 520px) {
+        height: 30px;
+    };
 `
 
 const TitleCollapse = styled.h3`
@@ -30,6 +45,14 @@ const TitleCollapse = styled.h3`
     font-weight: normal;
     font-size: 24px;
     padding-left: 18px;
+
+    media only screen and (max-width: 750px) {
+        font-size: 16px;
+    };
+
+    @media only screen and (max-width: 520px) {
+        font-size: 13px;
+    };
 `
 
 const DescriptionOfCollapse = styled.p`
@@ -40,12 +63,21 @@ const DescriptionOfCollapse = styled.p`
     font-size: 24px;
     border-radius: 5px;
     padding: 36px 27px 19px 18px;
+
+    
 `
 
 const Vector = styled.img`
     color: ${colors.quaternary}
     justify-content: center;
     padding-right: 18px;
+
+    @media only screen and (max-width: 750px) {
+        height: 12px;
+        width: 16px;
+
+
+    };
 `
 
 const CollapseOpenContainer = styled.div`
@@ -54,7 +86,7 @@ const CollapseOpenContainer = styled.div`
 
 function Collapse({title, description}) {
 
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(true)
 
     return isOpen ? (
         <CollapseContainer>
