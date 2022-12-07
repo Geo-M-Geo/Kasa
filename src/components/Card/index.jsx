@@ -1,7 +1,8 @@
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import colors from '../../utils/styles/colors'
 
+// CSS of the Cards component
 const CardImage = styled.img`
     border-radius: 10px;
     position: absolute;
@@ -11,7 +12,7 @@ const CardTitle = styled.h2`
   font-size: 18px;
   color: ${colors.primary};
 `
-
+// Component that display one card, the picture and the title of the card
 function Card({ title, picture }) {
   
     return (
@@ -21,15 +22,15 @@ function Card({ title, picture }) {
     )
   }
   
-  Card.propTypes = {
-    title: PropTypes.string.isRequired,
-    picture: PropTypes.string.isRequired,
-  }
+  // Card.propTypes = {
+  //   title: PropTypes.string.isRequired,
+  //   picture: PropTypes.string.isRequired,
+  // }
   
-  Card.defaultProps = {
-    title: '',
-    picture: '',
-  }
+  // Card.defaultProps = {
+  //   title: '',
+  //   picture: '',
+  // }
   
   export default Card
 

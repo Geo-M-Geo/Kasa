@@ -7,13 +7,15 @@ import Logement from './pages/Logement';
 import Erreur from './pages/Erreur';
 import Header from './components/Header'
 import Footer from './components/Footer'
-import GlobalStyle from './utils/styles';
+import GlobalStyle from './utils/styles/GlobalStyle';
 
+
+// the Const Root Create a dom with all the page inside, a header and a footer and router who contain a link to all the pages.
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
       <GlobalStyle />
+    <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -10,8 +10,8 @@ const CollapseContainer = styled.div`
     margin: auto;
     max-width:1023px;
     margin-top: 31px;
-    padding: 0 100px 0 100px;
-
+    // padding: 0 100px 0 100px;
+    margin-bottom:  30px;
     @media only screen and (max-width: 1024px) {
         padding: 0 50px 0 50px;
     };
@@ -86,14 +86,16 @@ const Vector = styled.img`
 const CollapseOpenContainer = styled.div`
     flex-direction: column;
 `
-
+// The collapse compoenent contain a ternaire condition that display just a bar with a titel and an image or if the user click on it open a text with it.
 function Collapse({title, description}) {
 
+    // UseState that keep the actual state then give a fonction to change it. Its set on true
     const [isOpen, setIsOpen] = useState(true)
 
     return isOpen ? (
         <CollapseContainer>
-            <CollapseButton onClick={() => setIsOpen(false)}>
+            {/* If the user click on the bar it set the usestate on false  */}
+            <CollapseButton onClick={() => setIsOpen(false)}> 
                 <TitleCollapse>{title}</TitleCollapse>
                 <Vector src={vectorDown} />
             </CollapseButton>
@@ -101,6 +103,7 @@ function Collapse({title, description}) {
     ) : (
         <CollapseContainer>
             <CollapseOpenContainer>
+            {/* If the user click on the bar it set the usestate on true so the text is display  */}
                 <CollapseButton onClick={() => setIsOpen(true)}>
                     <TitleCollapse>{title}</TitleCollapse>
                     <Vector src={vectorUp} />

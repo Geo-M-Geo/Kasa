@@ -1,15 +1,19 @@
 import logo_dark from '../../assets/logo_dark.png'
 import styled from 'styled-components'
 
+
+// CSS of the footer component
+
+const FooterContainer = styled.div`
+  position: relative;
+`
 const FooterStyle = styled.div `
     height: 209px;
     width: 100%;
-    left:0;
     background: #000000;
-    // position: absolute;
-    bottom: 0;
     display: flex;
     justify-content: center;
+    margin-top: auto;
 `
 const FooterContents = styled.div `
     display: flex;
@@ -17,11 +21,10 @@ const FooterContents = styled.div `
     align-items: center;
     justify-content: space-around;
     height: 100px;
-
 `
 
 const HomeLogo = styled.img `
-    height: 39.444419860839844px;
+    height: 40px;
     width: 122px;
     padding-top: 51%;
 `
@@ -42,14 +45,18 @@ const TextContent = styled.p `
     };
 `
 
+// Footer component
 function Footer() {
     return (
-        <FooterStyle>
-            <FooterContents>
-                <HomeLogo src={logo_dark} alt='Logo sombre du site Kasa dans le footer' />
-                <TextContent>© 2020 Kasa. All rights reserved</TextContent>
-            </FooterContents>
-        </FooterStyle>
+        <FooterContainer>
+            <FooterStyle>
+                {/* The Footer component containt 2 elements, a log and a text */}
+                <FooterContents>
+                    <HomeLogo src={logo_dark} alt='Logo sombre du site Kasa dans le footer' />
+                    <TextContent>© 2020 Kasa. All rights reserved</TextContent>
+                </FooterContents>
+            </FooterStyle>
+        </FooterContainer>
     )
 }
 

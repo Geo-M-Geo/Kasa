@@ -3,6 +3,10 @@ import logo_desktop from '../../assets/logo_desktop.png'
 import styled from 'styled-components'
 import colors from '../../utils/styles/colors'
 
+
+// CSS of the Header component 
+
+// CSS of the navbar part of the component with it's responsive.
 const HomeContainer = styled.nav`
     display: flex;
     flex-direction: raw;
@@ -51,7 +55,7 @@ const LinksStyle = styled(Link)`
     };
 `
 
-
+// Header component that contain a logo and a nav bar
 function Header() {
     return (
         <HomeContainer>
@@ -59,6 +63,7 @@ function Header() {
                 <HomeLogo src={logo_desktop} alt='Logo du site Kasa dans le header'/>
             </Link>
             <LinkContainer>
+            {/* Nav bar of the header component who link to an Accueil page and a A propos page */}
                     <LinksStyle to="/">Accueil</LinksStyle>
                     <LinksStyle to="/A-Propos">A Propos</LinksStyle>
             </LinkContainer>

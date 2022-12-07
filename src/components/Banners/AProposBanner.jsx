@@ -2,7 +2,7 @@ import AProposPicture from '../../assets/A_propos_background.png'
 import styled from 'styled-components'
 import AProposMobile from '../../assets/A_propos_mobile.png'
 
-
+// CSS of the component Banner for the A propos page.
 const BannerContainer = styled.div`
 display:flex;
 justify-content: center;
@@ -39,7 +39,7 @@ const BannerImageMobile = styled.img`
         object-fit: cover;
     };
 `
-
+// This component display a picture for the desktop and a different picture for the mobiles
 function AProposBanner() {
     return (
         <BannerContainer>

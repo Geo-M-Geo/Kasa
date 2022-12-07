@@ -2,6 +2,7 @@ import { appartements } from '../../datas/appartements'
 import styled from 'styled-components'
 import colors from '../../utils/styles/colors'
 
+// CSS about the AllCards component 
 const AppartementContainer = styled.ul`
     display: flex;
     flex-wrap: wrap;
@@ -81,19 +82,17 @@ const AppartementPicture = styled.img`
 `
 
 
-
+// This component display all the cards using the map function 
 function DisplayCards() {
     return (
             <AppartementContainer>
                 {appartements.map(({ id, title, cover }) => 
                     <PictureContainer key={id}>
                         <AppartementTitle>{title}</AppartementTitle>
-                        <AppartementPicture src={cover} alt="Cover phot" />
+                        <AppartementPicture src={cover} alt="Cover photo" />
                     </PictureContainer>
                 )}
             </AppartementContainer>
-
-
     )
 
 }

@@ -2,6 +2,9 @@ import BannerPicture from '../../assets/Home_background.png'
 import styled from 'styled-components'
 import colors from '../../utils/styles/colors'
 
+
+// CSS of the Home Banner component who contain all settings to adapte the picture and the text inside.
+
 const BannerContainer = styled.div`
     display:flex;
     justify-content: center;
@@ -51,6 +54,8 @@ const TextBanner = styled.p`
         padding-left: 20px;
     };
 `
+
+// Home Banner is a component who display a picture and a text inside the picture for the Home page
 function Banner() {
     return (
         <BannerContainer>
