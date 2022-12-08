@@ -1,0 +1,33 @@
+@import '../../Utils/variables'; 
+
+
+// Sass of the footer container
+.footer-container {
+    height: 209px;
+    width: 100%;
+    background-color: $quaternary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        &__logo{
+            padding-top:66px;
+
+        }
+        // Sass of the title of the footer component with his responsive
+        &__title{
+            color: $primary-color;
+            font-size: 24px;
+            margin: 0;
+            padding-top:2%;
+            padding-bottom: 3%;
+
+            @media only screen and (max-width: 750px) {
+                font-size: 16px;
+            };
+    
+            @media only screen and (max-width: 520px) {
+                font-size: 14px;
+            };
+        }
+}

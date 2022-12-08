@@ -1,0 +1,54 @@
+@import '../../Utils/variables.scss'; 
+
+// Sass of the header container who contain the website's logo and the navbar
+.header-container{
+    display: flex;
+    flex-direction: raw;
+    justify-content: space-between;
+    padding: 40px 100px 0 100px;
+    align-items: center;
+    margin: auto;
+    max-width: 1240px;
+    // Responsive of the header container
+    @media only screen and (max-width: 1024px) {
+        padding: 20px 50px 0 50px;
+    };
+    @media only screen and (max-width: 750px) {
+        padding: 20px 20px 0 20px;
+    };
+    // Sass and responsive of the website' logo 
+    &__logo {
+        @media only screen and (max-width: 750px) {
+            max-width: 100%;
+            height: auto;
+        };
+    }
+    // Sass and responsive of the nav bar on the header componant
+    &__list{
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 520px) {
+            text-transform: uppercase;
+            margin-left: 50px;
+            padding-left: 0px;
+        };
+
+        &__links{
+            color: #FF6060;
+            font-size: 20px;
+            text-decoration: none;
+            :hover {
+                text-decoration: underline;
+            };
+    
+            @media only screen and (max-width: 520px) {
+                font-size: 12px;
+                font-weight: 500;
+            };
+        }
+    }
+
+
+}

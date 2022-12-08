@@ -1,0 +1,18 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Monteserrat Police  */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Container that contain all the website */
+.website-container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
