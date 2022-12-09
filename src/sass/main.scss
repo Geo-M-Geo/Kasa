@@ -1,5 +1,18 @@
 @import"../sass/Utils/variables";
-@import"./Layout/Footer/footer.scss";
-@import"./Layout/Header/header.scss";
-@import"./Layout/Layout.scss";
+
+// Layout :
+@import"../layout/Header/header.scss";
+@import"../layout/Footer/footer.scss";
+@import"../layout/layout.scss";
+
+// Components : 
+@import"../components/AllCards/AllCards.scss";
+@import"../components/Banners/A-propos-banner/AProposBanner.scss";
+@import"../components/Banners/Home-banner/HomeBanner.scss";
+@import"../components/Collapse/Collapse.scss";
+
+// Pages :
+@import"../pages/A-Propos/A-propos.scss";
+@import"../pages/Erreur/Erreur.scss";
+
 @import"./../index.scss";

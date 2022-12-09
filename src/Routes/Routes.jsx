@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home/index'
-import APropos from '../pages/A-Propos/index';
+import APropos from '../pages/A-Propos/A-porpos';
 import Logement from '../pages/Logement/index';
-import Erreur from '../pages/Erreur/index';
+import Erreur from '../pages/Erreur/Erreur';
 import Layout from '../layout/Layout';
 // Function that contain all the routes, the Home page, the about page, the logement page and the error page
 function PagesRoutes() {

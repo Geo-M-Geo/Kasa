@@ -1,0 +1,56 @@
+@import'../../../sass/Utils/variables.scss';
+
+// SCSS of the banner component in the home page with the media queries for the responsive
+.home-banner-container{
+    display:flex;
+    justify-content: center;
+    padding: 43px 100px 43px 100px;
+    max-height: 223px;
+    align-items: center;
+    @media only screen and (max-width: 1024px) {
+        padding: 30px 50px 0 50px;
+    };
+    @media only screen and (max-width: 750px) {
+        padding: 20px 20px 0 20px;
+    };
+    @media only screen and (max-width: 500px) {
+        justify-content: flex-start;
+    };
+    // Image of the home banner component with a responsive at 750px and under
+    &__image{
+        border-radius: 25px;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        filter: brightness(60%);
+
+        @media only screen and (max-width: 750px) {
+            border-radius: 10px;
+            height: 111px;
+            width: 100%;
+        };
+    }
+
+    // Title of the home banner component with 3 responsive sizes
+    &__title{
+        position: absolute;
+        font-weight: 500;
+        font-size: 48px;
+        color: $primary-color;
+        @media only screen and (max-width: 1235px) {
+            font-size: 30px;
+        };
+
+        @media only screen and (max-width: 850px) {
+            font-size: 24px;
+        };
+        
+        @media only screen and (max-width: 500px) {
+            // font-size: 15px;
+            width: 217px;
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+        };
+    }
+}

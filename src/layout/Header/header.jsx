@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import logo_desktop from '../../assets/logo_desktop.png'
+import"../Header/header.scss";
 
 // Header component that contain a logo and a nav bar
 function Header() {

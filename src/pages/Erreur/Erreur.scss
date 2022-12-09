@@ -1,0 +1,22 @@
+// SCSS of the Error container which contain an image, a title and a link
+.error-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    flex-grow: 1;
+    position: relative;
+
+    &__image{
+        width: 597px;
+        margin: auto;
+    }
+
+    &__title{
+        margin: auto;
+    }
+
+    &__link{
+        margin: auto;
+    }
+}

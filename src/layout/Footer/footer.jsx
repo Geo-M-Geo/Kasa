@@ -1,5 +1,5 @@
 import logo_dark from '../../assets/logo_dark.png'
-import '../../sass/Layout/Footer/footer.scss'
+import '../../layout/Footer/footer.scss'
 
 // Footer component who contain a clear logo of the website and the rights
 function Footer() {

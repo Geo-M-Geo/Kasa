@@ -1,5 +1,5 @@
-import DisplayCards from "../../components/AllCards"
-import HomeBanner from "../../components/Banners/HomeBanner"
+import DisplayCards from "../../components/AllCards/AllCards"
+import HomeBanner from "../../components/Banners/Home-banner/HomeBanner"
 
 
 // Home page that contain the HomeBanner Component and the Display card component.
