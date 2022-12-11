@@ -5,9 +5,9 @@ import"../layout/layout.scss";
 // Component that take the header and the footer and include the children in the middle, so further the paths
 function Layout({children}) {
     return (
-        <div>
+        <div >
             <Header />
-            <div>{children}</div>
+            <div className="container">{children}</div>
             <Footer />
         </div>
     );
