@@ -1,11 +1,11 @@
 @import"../sass/Utils/variables";
 
 // Layout :
-@import"../layout/Header/header.scss";
-@import"../layout/Footer/footer.scss";
-@import"../layout/layout.scss";
+
 
 // Components : 
+@import"../components/Header/header.scss";
+@import"../components/Footer/footer.scss";
 @import"../components/AllCards/AllCards.scss";
 @import"../components/Banners/A-propos-banner/AProposBanner.scss";
 @import"../components/Banners/Home-banner/HomeBanner.scss";
