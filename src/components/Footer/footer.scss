@@ -9,10 +9,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
         &__logo{
             padding-top:66px;
-
         }
         // Sass of the title of the footer component with his responsive
         &__title{

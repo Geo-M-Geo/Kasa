@@ -27,7 +27,7 @@
 
     // SCSS of the image version mobile wish is diplay when the screen is of the size of 375px or less
     &__image-mobile{
-        background-image: url();
+        // background-image: url();
         display: none;
         opacity: 0.8;
         @media only screen and (max-width: 375px) {
