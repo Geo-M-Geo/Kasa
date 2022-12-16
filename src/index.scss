@@ -5,9 +5,12 @@ body {
   // min-height: 100%;
   display:block;
   box-sizing: border-box;
+  position: relative;
+  min-height: 100vh;
+  // padding-bottom: 100px;
 }
 
 /* Monteserrat Police  */
 * {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }

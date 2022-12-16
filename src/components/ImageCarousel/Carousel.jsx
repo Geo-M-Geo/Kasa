@@ -1,47 +1,32 @@
-import { useState } from 'React';
-import { Link } from 'react-router-dom'
-import { appartements } from '../../datas/appartements';
+// import React from "react";
+// import { useState } from 'React';
+// // import { appartements } from '../../datas/appartements';
+// import  vector_foward  from '../../assets/vector_foward.png';
+// import  vector_back  from '../../assets/vector_back.png';
 
-function Carousel({appartements}) {
-    const [currentIndex, setIndex] = useState(0);
 
-    const prevPicture = () => {
-        setIndex(currentIndex === 1 ? 1 : currentIndex - 1)};
-        
-    const nextPicture = () => {
-        setIndex(currentIndex + 1)};
-
-        return (
-            
-            <div>
-            {appartements.map((pictures, index) => {
-                return  (
-                <div>
-                <div key={index}>
-                    {index === currentIndex && ( <img src={pictures} alt='' />)}
-                </div>
-                <Link className="carousel-container__image_back" onClick={(prevPicture)}/>
-                <Link className="carousel-container__image_foward" onClick={(nextPicture)}/>
-                </div>
-                )
-            })}
-            </div>
-        )
-    }
-
-    export default Carousel
+// function Carousel({ appartements }) {
+//     const [currentIndex, setCurrentIndex] = useState(0);
+//     const length = appartements.length;
 
 
 
-
-//             <div className="carousel-container">
-    
-//             {appartements.map((appartements, index) => {
-//                 return  <img key={index}>{appartements.pictures[currentIndex]}</img>
+//     return(
+//         <div className="carouselcontainer">
+//             {appartements.map((picture, index) => {
+//                 return (
+//                     <div>
+//                         <img alt="" key={index}>{picture}</img>
+//                         <img alt="" to={vector_foward} className="carousel-container__image_back" onClick={setCurrentIndex(currentIndex === length ? 0 : currentIndex + 1) }/>
+//                         <img alt="" to={vector_back} className="carousel-container__image_foward" onClick={(setCurrentIndex(currentIndex === 0 ? length -1 : currentIndex - 1))}/>
+//                     </div>
+//                 )
 //             })}
-//             <Link className="carousel-container__image_back" onClick={() => setIndex(-1)}/>
-//             <Link className="carousel-container__image_foward" onClick={() => setIndex(1)}/>
 //         </div>
-//     )
+//     ) 
+
+
     
-// }
+    
+// } 
+// export default Carousel;

@@ -1,15 +1,15 @@
 @import '../../sass/Utils/variables.scss'; 
 
-
 // Sass of the footer container
 .footer-container {
+    position: absolute;
+    bottom: 0;
     height: 209px;
     width: 100%;
     background-color: $quaternary-color;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
         &__logo{
             padding-top:66px;
         }

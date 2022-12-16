@@ -7,11 +7,11 @@
     flex-wrap: wrap;
     justify-content:space-around;
     margin: 43px 100px 60px 100px;
+    padding: inherit;
     max-width: 100%;
     border-radius: 25px;
     background-color: $secondary-color;
     list-style:none;
-    padding: inherit;
 
     // Media queries for the responsive of the container. It contain all the cards
     @media only screen and (max-width: 1024px) {
@@ -39,7 +39,7 @@
     &__appartement{
         position: relative;
         border-radius: 10px;
-        padding: 56px 0 56px 0;
+        padding: 56px 0 0 0;
         width: 340px;
         height: 340px;
     
@@ -61,7 +61,7 @@
             color: $primary-color;
             overflow-wrap: break-word;
             max-width: 300px;   
-            bottom: 70px;
+            bottom: 25px;
             left: 30px;
             font-size: 18px;
 
