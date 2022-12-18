@@ -8,11 +8,6 @@ import './index.scss'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div className='Website-container'>
       <PagesRoutes />
-    </div>
   </React.StrictMode>
 );
-
-
-// a faire : refaire tout le css dans des fichiers séparé, refaire le code de mon footer et et les routes

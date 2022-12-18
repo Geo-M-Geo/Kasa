@@ -1,33 +1,64 @@
 @import'../../sass/Utils/variables.scss';
 
-// SCSS of the Error container which contain an image, a title and a link
+// CSS of the Error's main container that is display with flex-box 
 .error-container{
-    display: flex;
-    flex-direction: column;
-    // justify-content: space-evenly;
-    // margin: auto 0 auto 0;
-    min-height: 100vh;
-    // justify-content: space-evenly;
-    // height:85vh;
-    // align-items: center;
-    // height: auto;
-    // flex-grow: 1;
-    // position: relative;
+        min-height: 65vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around; 
+// CSS of the image and title container. It set the height of the container, the direction with flexbox and its margin to center the container
+    &__top{
+        padding-top: 5%;
+        min-height: 35vh;
+        display:flex;
+        flex-direction: column;
+        margin: 0 auto 0 auto;
+        // CSS of the error's image. It set the margin to center the image and the width.
+        &__image{
+            margin: 0 auto 0 auto;
+            width: 30%;
+            // Media queries of the image to make it bigger
+            @media only screen and (max-width: 1024px) {
+                width: 40%;
+            };
+            // Media queries of the image to make it bigger then change the margin to lower the image.
+            @media only screen and (max-width: 750px) {
+                width: 50%;
+                margin: auto auto 0 auto;
+                padding-top: 10%;
+            };
+        }
+        // CSS of the title. It set the margin, change the color, the size and align the text in the center
+        &__title{
+            margin: auto;
+            color:$tertiary-color;
+            font-size: 36px;
+            text-align:center;
+            // Media queries of the title. It reduce the font size
+            @media only screen and (max-width: 1024px) {
+                font-size: 25px;
+            };
+            // Media queries of the title. It change the margin top from auto to 5% and change the diplay of the title to make it in two lines
+            @media only screen and (max-width: 750px) {
+                margin: 5% auto auto auto;
+                display: flex;
+                flex-direction: column;
+            };
+            // Media queries of the title. It change the font size to smaller 
+            @media only screen and (max-width: 520px) {
+                font-size: 18px;
+            };
+        }
 
-    &__image{
-        width: 597px;
-        // margin: auto;
     }
-
-    &__title{
+    // CSS of the Link. It set the magin to auto to center it, set the color and the font size.
+    &__link{
         margin: auto;
         color:$tertiary-color;
-        font-size: 36px;
-    }
-
-    &__link{
-        // margin: auto;
-        color:$tertiary-color;
         font-size: 18px;
+        // Media queries of the Link. It change the font size.
+        @media only screen and (max-width: 520px) {
+            font-size: 14px;
+        };
     }
 }
