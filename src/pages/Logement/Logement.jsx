@@ -5,29 +5,49 @@ import Collapse from '../../components/Collapse/Collapse';
 import Rating from '../../components/Rating/Rating';
 import Erreur from '../Erreur/Erreur';
 import styled from 'styled-components';
-// import LogementInfos from '../../components/LogementInfos/LogementInfos'
-const Divo = styled.h3`
-    background-color: black;
-`
+
 
 function Logement() {
-const {id} = useParams(1);
-console.log({id})
-const items = appartements.filter((item) => item.id === {id})
-// const parsedItem = parseInt(items)
+const { id } = useParams(0);
+const items = appartements.find((item) => item.id === id);
 console.log(items)
+if (!items) {return <Erreur />}
 
-    return ( 
-        <div>
-            
-            {items.map(({ id, title, pictures, description, host, rating, location, equipements, tags}) => 
-                <Divo key={id}>
-                    <h3>{title}</h3>
-                    console.log({title})
-                </Divo>
-            )}
-        </div>
-    )
+const ItemEquipement = items.equipments.map((equipment, index) => {
+  return <li key={index}>{equipment}</li>
+})
+
+
+
+return (
+  <div>
+    <Carousel pictures={items.pictures}/>
+    <div>
+        <h3>{items.title}</h3>
+        <p>{items.location}</p>
+        <ul>
+          {items.tags.map((tags, index) => {
+            return (
+                <li key={index}>{tags}</li>
+            )
+          })}
+        </ul>
+    </div>
+  <div>
+    <div>
+        <p>{items.host.name}</p>
+        <img alt="Propriétaire de l'appartement" src={items.host.picture} />
+    </div>
+    <Rating rating={items.rating} />
+  </div>
+  <div className='logement-container'>               
+    <Collapse title='Descritpion' description={items.description} className='logement-container-collapse' />
+    <Collapse title='Equipements' description={ItemEquipement} className='logement-container-collapse'/>
+  </div>
+</div> 
+
+)
+
 }
 
 export default Logement;
@@ -52,6 +72,13 @@ export default Logement;
 
 
 
+{/* <Divo>
+{appartements.filter(item => item.id === {id}).map(({ index, id, title, pictures, description, host, rating, location, equipements, tags}) => (
+  <div key={index}>
+    {title};
+  </div>
+))}
+</Divo> */}
 
 
 
