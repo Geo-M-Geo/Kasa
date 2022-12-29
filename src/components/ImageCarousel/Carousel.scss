@@ -1,0 +1,35 @@
+// CSS of the carousel container. His position is relative so the other element can overlap it.
+.carousel-container {
+    max-width: 1240px;
+    margin:auto;
+    margin: 43px 100px 0 100px;
+    position: relative;
+    height: 415px;
+    // CSS of the image, the height and width are set and object fit so the picture is not strech or distorded.
+    &__image {
+        border-radius: 25px;
+        object-fit: cover;
+        height: 415px;
+        width: 100%;
+    }
+    // CSS of the previous button. Its position is absolute so it can overlap onto the container and its placed with left and top.
+    &__previous-button {
+        position: absolute;
+        left:3%;
+        top: 43%;
+    }
+    // CSS of the next button. Its position is absolute so it can overlap onto the container and its placed with right and top.
+    &__next-button {
+        position: absolute;
+        right:3%;
+        top: 43%;
+    }
+    // CSS of the number's info. Its position is absolute so it can overlap onto the container and its placed with left and bottom.
+    &__picture-number-info {
+        position: absolute;
+        left: 50%;
+        bottom: 2%;
+        color: white;
+        font-weight: bolder;
+    }
+}

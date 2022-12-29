@@ -1,35 +1,38 @@
-import React from 'react'
+// import React from 'react'
 import { useState } from 'react';
-import { useParams } from 'react-router-dom'
-import { appartements } from '../../datas/appartements';
 import  vector_foward  from '../../assets/vector_foward.png';
 import  vector_back  from '../../assets/vector_back.png';
+import '../ImageCarousel/Carousel.scss'
 
+// Function that display the image's carousel of the selected appartement
+function Carousel({pictures}) {
 
-function Carousel(pictures) {
-    console.log(pictures)
-
-    const displayPicture = pictures.map((pic, index) => {
-        <img key={index} src={pic}/>
-    } )
-    const { Id } = useParams();
+    // constant with the current index and the function to change it
     const [currentIndex, setCurrentIndex] = useState(0);
-    const length = appartements.length;
-    const NextPicture = currentIndex === length ? 0 : currentIndex + 1;
-    const PreviousPicture = currentIndex === 0 ? length -1 : currentIndex - 1;
-    const TheAppartment = appartements[currentIndex]
 
-    // return (
-    //     // <div className="carouselcontainer">
-    //     //     {currentIndex} >= {length} ? (
+    /* If the current index is 0 it take the length of the pictures'array 
+       and add -1 to display the last array's picture */
+    const PreviousPicture = () => {
+        currentIndex === 0 ? setCurrentIndex( pictures.length -1 ) 
+        : setCurrentIndex( currentIndex - 1 )
+    }
+    /* It take the current index and add one because the display start at one and the array at 0,
+       it set it at 0 to start again or add one. */
+    const NextPicture = () => {
+        currentIndex + 1 === pictures.length ? setCurrentIndex(0) 
+        : setCurrentIndex(currentIndex + 1)
+    }
 
-    //     //     <img alt="" key={pictures.index}>{pictures.picture}</img>
-    //     //     <img alt="" to={vector_foward} className="carousel-container__image_back" onClick={setCurrentIndex(NextPicture) }/>
-    //     //      <img alt="" to={vector_back} className="carousel-container__image_foward" onClick={setCurrentIndex(PreviousPicture)}/>
-    //     //      ) : ({setCurrentIndex} = 0)
-            
-    //     // </div>
-    // ) 
+    return (
+        /* The div contain 4 elements, the appartements current picture, 
+           2 arrows to go back and foward and a small element that tell which picture's number is display */
+        <div className='carousel-container' >
+            <img className='carousel-container__image' src={pictures[currentIndex]} alt="image choisi de l'appartement"/>
+            <img className='carousel-container__previous-button' src={vector_back} alt='bouton precedent' onClick={PreviousPicture} />
+            <img className='carousel-container__next-button' src={vector_foward} alt='bouton suivante' onClick={NextPicture} />
+            <p className='carousel-container__picture-number-info' >{currentIndex +1}/{pictures.length}</p>
+        </div>
+    )
 }
 
 export default Carousel;
