@@ -1,0 +1,28 @@
+@import '../../sass/Utils/variables.scss';
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    color: $tertiary-color;
+    &__title{
+        font-size: 36px;
+    }
+    &__location{
+        font-size: 18px;
+    }
+    &__tags{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        color: white;
+        padding: 0;
+        & li {
+            height: 25px;
+        width: 115px;
+        background-color: $tertiary-color;
+        border-radius: 10px;
+        margin-right: 10px;
+        text-align: center;
+        }
+    }
+}

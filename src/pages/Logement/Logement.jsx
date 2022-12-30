@@ -4,6 +4,7 @@ import Carousel from '../../components/ImageCarousel/Carousel'
 import Collapse from '../../components/Collapse/Collapse';
 import Rating from '../../components/Rating/Rating';
 import Erreur from '../Erreur/Erreur';
+import '../../pages/Logement/Logement.scss'
 
 // Function that display all the logement page, it include 3 component and the error page.
 function Logement() {
@@ -24,10 +25,10 @@ const ItemEquipement = items.equipments.map((equipment, index) => {
 return (
   <div>
     <Carousel pictures={items.pictures}/>
-    <div>
-        <h3>{items.title}</h3>
-        <p>{items.location}</p>
-        <ul>
+    <div className='title-container' >
+        <h3 className='title-container__title'>{items.title}</h3>
+        <p className='title-container__location'>{items.location}</p>
+        <ul className='title-container__tags'>
           {items.tags.map((tags, index) => {
             return (
                 <li key={index}>{tags}</li>
