@@ -15,7 +15,7 @@ function Rating({rating}) {
                 ) : (
                     <img key={index} src={greyStar} alt="Etoile grise donc invalide" />
                 )
-            )};
+            )}
         </div>
     )
 

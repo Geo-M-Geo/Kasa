@@ -23,32 +23,39 @@ const ItemEquipement = items.equipments.map((equipment, index) => {
 /* The logement function return the carousel of image with the props, 
    the title, the location, a list of tags, the host's name and picture, the description and equipement list */
 return (
-  <div>
+  <>
     <Carousel pictures={items.pictures}/>
-    <div className='title-container' >
-        <h3 className='title-container__title'>{items.title}</h3>
-        <p className='title-container__location'>{items.location}</p>
-        <ul className='title-container__tags'>
-          {items.tags.map((tags, index) => {
-            return (
-                <li key={index}>{tags}</li>
-            )
-          })}
-        </ul>
-    </div>
-  <div>
-    <div>
-        <p>{items.host.name}</p>
-        <img alt="Propriétaire de l'appartement" src={items.host.picture} />
-    </div>
-    <Rating rating={items.rating} />
-  </div>
-  <div className='logement-container'>               
-    <Collapse title='Descritpion' description={items.description} className='logement-container-collapse' />
-    <Collapse title='Equipements' description={ItemEquipement} className='logement-container-collapse'/>
-  </div>
-</div> 
+    <div className='logement' >
+    <div className='logement-container' >
 
+      <div className='logement-container__infos' >
+          <h3 className='logement-container__infos__title'>{items.title}</h3>
+          <p className='logement-container__infos__location'>{items.location}</p>
+          <ul className='logement-container__infos__tags'>
+            {items.tags.map((tags, index) => {
+              return (
+                  <li key={index}>{tags}</li>
+              )
+            })}
+          </ul>
+      </div>
+
+      <div className='logement-container__host' >
+        <div className='logement-container__host__info'>
+            <p className='logement-container__host__info__name' >{items.host.name}</p>
+            <img className='logement-container__host__info__picture' alt="Propriétaire de l'appartement" src={items.host.picture} />
+        </div>
+        <Rating className='logement-container__host__rating' rating={items.rating} />
+      </div>
+
+    </div>
+
+    <div className='logement-container'>               
+      <Collapse title='Descritpion' description={items.description} className='logement-container-collapse' />
+      <Collapse title='Equipements' description={ItemEquipement} className='logement-container-collapse'/>
+    </div>
+  </div> 
+</>
 )
 
 }
