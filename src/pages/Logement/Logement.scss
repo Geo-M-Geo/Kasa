@@ -1,10 +1,10 @@
 @import '../../sass/Utils/variables.scss';
 
 .logement{
-    min-height: 65vh;
+    max-height: 65vh;
     margin: 30px 100px 0 100px;
     max-width: 1240px;
-
+    padding-bottom: 200px;
     @media only screen and (min-width: 1440px) {
         margin:43px auto 0 auto;
     }
@@ -16,78 +16,104 @@
         margin: 20px 20px 0 20px;
     };
 
-}
 
-.logement-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 120px;
-    @media only screen and (max-width: 600px) {
-        flex-direction: column;
-    }
 
-    &__infos{
-    display: flex;
-    flex-direction: column;
-    color: $tertiary-color;
+    &__container{
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        &__title{
-            font-size: 36px;
-            margin: 0;
+        height: 120px;
+        @media only screen and (max-width: 600px) {
+            flex-direction: column;
         }
-        &__location{
-            font-size: 18px;
-            font-weight: 500;
-            margin: 0;
 
-        }
-        &__tags{
-            margin: 0;
-            display: flex;
-            flex-direction: row;
-            list-style: none;
-            color: white;
-            padding: 0;
-            text-align: center;
-            
-            & li {
-                height: 22px;
-                width: 115px;
-                background-color: $tertiary-color;
-                border-radius: 10px;
-                margin-right: 10px;
-                padding-top: 3px;
-            }
-        }
-    }
-
-    &__host{
+        &__infos{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        &__info{
-            display: flex;
-            flex-direction: row;
-            &__name{
-                padding-right: 10px;
-                width: 80px;
-                text-align: right;
-                display: flex;
-                flex-direction: column;
-            color: $tertiary-color;
-            font-weight: 500;
+        color: $tertiary-color;
+            justify-content: space-between;
+            &__title{
+                font-size: 36px;
+                margin: 0;
+                font-weight: 500;
             }
+            &__location{
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
 
-            &__picture{
-                border-radius: 50%;
-                height: 64px;
-                width: 64px;
+            }
+            &__tags{
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                color: white;
+                padding: 0;
+                text-align: center;
+                
+                & li {
+                    height: 22px;
+                    width: 115px;
+                    background-color: $tertiary-color;
+                    border-radius: 10px;
+                    margin-right: 10px;
+                    padding-top: 3px;
+                }
             }
         }
 
-        &__rating{
-            // justify-content: right;
+        &__host{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &__info{
+                display: flex;
+                flex-direction: row;
+                &__name{
+                    padding-right: 10px;
+                    width: 80px;
+                    text-align: right;
+                    display: flex;
+                    flex-direction: column;
+                color: $tertiary-color;
+                font-weight: 500;
+                }
+
+                &__picture{
+                    border-radius: 50%;
+                    height: 64px;
+                    width: 64px;
+                }
+            }
+        }
+
+    }
+
+    &__collapse{
+        margin-top: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1240px;
+        padding-bottom: 30px;
+
+        .collapse-container__button{
+        width: 582px;
+        margin-left: 0;
+
+        @media only screen and (max-width: 1380px) {
+            max-width: 540px;
+        };
+        }
+
+
+        .collapse-container-open {
+        width: 582px;
+            margin: 0 0 auto 0;
+        }
+        .collapse-container{
+            margin: 0;
         }
     }
 }

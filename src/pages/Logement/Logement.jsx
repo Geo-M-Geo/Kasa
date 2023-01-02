@@ -26,33 +26,34 @@ return (
   <>
     <Carousel pictures={items.pictures}/>
     <div className='logement' >
-    <div className='logement-container' >
 
-      <div className='logement-container__infos' >
-          <h3 className='logement-container__infos__title'>{items.title}</h3>
-          <p className='logement-container__infos__location'>{items.location}</p>
-          <ul className='logement-container__infos__tags'>
-            {items.tags.map((tags, index) => {
-              return (
-                  <li key={index}>{tags}</li>
-              )
-            })}
-          </ul>
-      </div>
+      <div className='logement__container' >
 
-      <div className='logement-container__host' >
-        <div className='logement-container__host__info'>
-            <p className='logement-container__host__info__name' >{items.host.name}</p>
-            <img className='logement-container__host__info__picture' alt="Propriétaire de l'appartement" src={items.host.picture} />
+        <div className='logement__container__infos' >
+            <h3 className='logement__container__infos__title'>{items.title}</h3>
+            <p className='logement__container__infos__location'>{items.location}</p>
+            <ul className='logement__container__infos__tags'>
+              {items.tags.map((tags, index) => {
+                return (
+                    <li key={index}>{tags}</li>
+                )
+              })}
+            </ul>
         </div>
-        <Rating className='logement-container__host__rating' rating={items.rating} />
+
+        <div className='logement__container__host' >
+          <div className='logement__container__host__info'>
+              <p className='logement__container__host__info__name' >{items.host.name}</p>
+              <img className='logement__container__host__info__picture' alt="Propriétaire de l'appartement" src={items.host.picture} />
+          </div>
+          <Rating className='logement__container__host__rating' rating={items.rating} />
+        </div>
+
       </div>
 
-    </div>
-
-    <div className='logement-container'>               
-      <Collapse title='Descritpion' description={items.description} className='logement-container-collapse' />
-      <Collapse title='Equipements' description={ItemEquipement} className='logement-container-collapse'/>
+    <div className='logement__collapse'>               
+      <Collapse title='Descritpion' description={items.description} />
+      <Collapse title='Equipements' description={ItemEquipement} />
     </div>
   </div> 
 </>
@@ -61,54 +62,3 @@ return (
 }
 
 export default Logement;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* <Divo>
-{appartements.filter(item => item.id === {id}).map(({ index, id, title, pictures, description, host, rating, location, equipements, tags}) => (
-  <div key={index}>
-    {title};
-  </div>
-))}
-</Divo> */}
-
-
-
-            {/* console.log({appart.title})
-
-                            <h3>{appart.title}</h3>
-                            <p>{location}</p>
-                            {tags.map((tag, index) =>
-                            <p key={index}>{tag}</p>
-                            )}
-                        </div>
-                        <div>
-                            <div>
-                                <p>{host.name}</p>
-                                <img alt="Propriétaire de l'appartement">{host.picture}</img>
-                            </div>
-                            <Rating rating={rating} />
-                        </div>
-                        <div className='logement-container'>               
-                        <Collapse title='Descritpion' description={description} className='logement-container-collapse' />
-                        <Collapse title='Equipements' equipement={equipements} className='logement-container-collapse' />
-                        </div>
-                    </div>       */}

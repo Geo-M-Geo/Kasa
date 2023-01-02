@@ -1,14 +1,14 @@
 // CSS of the carousel container. His position is relative so the other element can overlap it.
 .carousel-container {
     max-width: 1240px;
-    margin: 43px 100px 0 100px;
+    margin:25px 100px 0 100px;
     position: relative;
     height: 415px;
     @media only screen and (min-width: 1440px) {
-        margin:43px auto 0 auto;
+        margin: 25px auto 0 auto;
     };
     @media only screen and (max-width: 1024px) {
-        margin: 30px 50px 0 50px;
+        margin: 25px 50px 0 50px;
     };
     @media only screen and (max-width: 750px) {
         margin: 20px 20px 0 20px;
