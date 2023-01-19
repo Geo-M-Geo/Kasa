@@ -51,6 +51,7 @@
                 color: white;
                 padding: 0;
                 text-align: center;
+                font-size: 14px;
                 
                 & li {
                     height: 22px;
@@ -97,23 +98,36 @@
         justify-content: space-between;
         max-width: 1240px;
         padding-bottom: 30px;
+        &__element{
+            width: 47%;
+            @media only screen and (max-width: 1024px) {
+            // width: 50%;
 
-        .collapse-container__button{
-        width: 582px;
-        margin-left: 0;
+            };
+
+        }
+
+    .collapse-container__button{
+        margin:auto;
+        padding: 10px;
 
         @media only screen and (max-width: 1380px) {
-            max-width: 540px;
+            max-width: 100%;
         };
-        }
+    }
 
+    .collapse-container {
+        padding: 0;
+    }
 
-        .collapse-container-open {
-        width: 582px;
-            margin: 0 0 auto 0;
-        }
+    .collapse-container-open {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
         .collapse-container{
             margin: 0;
+            // padding-bottom: 30px;
         }
     }
 }

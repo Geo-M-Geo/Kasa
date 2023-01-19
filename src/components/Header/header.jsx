@@ -10,7 +10,7 @@ function Header() {
                 <img className='header-container__logo' src={logo_desktop} alt='Logo du site Kasa dans le header'/>
             </Link>
             <nav className='header-container__list'>
-            {/* Nav bar of the header component who link to an Accueil page and a A propos page */}
+            {/* Nav bar of the header component with two links, one to the Accueil page and one to the A propos page */}
                     <Link className='header-container__list__links' to="/">Accueil</Link>
                     <Link className='header-container__list__links' to="/A-Propos">A Propos</Link>
             </nav>

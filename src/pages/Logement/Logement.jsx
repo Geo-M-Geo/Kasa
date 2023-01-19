@@ -51,9 +51,13 @@ return (
 
       </div>
 
-    <div className='logement__collapse'>               
-      <Collapse title='Descritpion' description={items.description} />
-      <Collapse title='Equipements' description={ItemEquipement} />
+    <div className='logement__collapse '> 
+      <div className='logement__collapse__element' >
+        <Collapse  title='Descritpion' description={items.description} />
+      </div>
+      <div className='logement__collapse__element' >
+        <Collapse  title='Equipements' description={ItemEquipement} />  
+      </div>              
     </div>
   </div> 
 </>

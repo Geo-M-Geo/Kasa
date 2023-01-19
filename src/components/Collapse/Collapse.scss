@@ -33,6 +33,9 @@
         @media only screen and (max-width: 520px) {
             height: 30px;
         };
+        @media only screen and (max-width: 1380px) {
+            max-width: 100%;
+        };
 
         // SCSS of the title's bar with 2 sizes responsive changes
         &__title{

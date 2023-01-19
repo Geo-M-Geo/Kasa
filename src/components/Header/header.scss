@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px 100px 0 100px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     max-width: 1240px;
     // Responsive of the header container
     @media only screen and (max-width: 1024px) {
@@ -23,26 +23,26 @@
             height: auto;
         };
     }
-    // Sass and responsive of the nav bar on the header componant
+    // Sass and responsive of the nav bar container
     &__list{
         width: 200px;
         display: flex;
         justify-content: space-between;
-
         @media only screen and (max-width: 520px) {
             text-transform: uppercase;
             margin-left: 50px;
-            padding-left: 0px;
         };
-
+        @media only screen and (max-width: 350px) {
+            margin-left: 20px;
+        };
+        // Sass of the two navbar's link 
         &__links{
             color: #FF6060;
             font-size: 20px;
             text-decoration: none;
             :hover {
                 text-decoration: underline;
-            };
-    
+            };   
             @media only screen and (max-width: 520px) {
                 font-size: 12px;
                 font-weight: 500;
