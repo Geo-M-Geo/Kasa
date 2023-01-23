@@ -1,14 +1,13 @@
-// SCSS of the A propos page who contain a banner and the collapses component
-.container{
-    margin: 43px 100px 0 100px;
-    padding-bottom: 200px;
+/* SCSS of the A propos page who contain the collapses components, 
+    it contain the height and the responsive for the full container */
+.collapses-container{
+    margin: 43px 100px 50px 100px;
+    min-height: 50vh;
     // Responsive 
-    @media only screen and (max-width: 750px) {
-        font-size: 16px;
-        height: 500px;
+    @media only screen and (max-width: 1024px) {
+        margin: 0 50px 0 50px;
     };
-
-    @media only screen and (max-width: 520px) {
-        font-size: 14px;
+    @media only screen and (max-width: 750px) {
+        margin: 0 20px;
     };
 }

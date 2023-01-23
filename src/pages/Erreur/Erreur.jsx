@@ -2,7 +2,7 @@ import Error from '../../assets/404_Error.png'
 import { Link } from 'react-router-dom'
 import'../Erreur/Erreur.scss';
 
-// Error function. It contain a main container that contain another container with the image and title inside then the link to go back to the Home page
+// Error function. It contain a main container that contain another container with the error's image and title inside then the link to go back to the Home page
 function Erreur() {
     return ( 
         <div className='error-container'>

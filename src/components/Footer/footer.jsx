@@ -1,7 +1,7 @@
 import logo_dark from '../../assets/logo_dark.png'
 import './footer.scss'
 
-// Footer component who contain a clear logo of the website and the rights
+// Footer component who contain a white logo of the website and the rights
 function Footer() {
     return (
         <footer className='footer-container'>

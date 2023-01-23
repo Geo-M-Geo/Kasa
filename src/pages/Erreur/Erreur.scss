@@ -1,19 +1,20 @@
 @import'../../sass/Utils/variables.scss';
 
-// CSS of the Error's main container that is display with flex-box 
+// Sass of the Error's main container that is display with flex-box 
 .error-container{
-        min-height: 65vh;
+        min-height: 70vh;
         display:flex;
         flex-direction: column;
-        justify-content: space-around; 
-// CSS of the image and title container. It set the height of the container, the direction with flexbox and its margin to center the container
+/* Sass of the top contain which set height, the margins and how its display
+     with flex-box of the error's image and the title. */
     &__top{
-        padding-top: 5%;
-        min-height: 35vh;
         display:flex;
         flex-direction: column;
-        margin: 0 auto 0 auto;
-        // CSS of the error's image. It set the margin to center the image and the width.
+        justify-content: space-around;
+        min-height: 45vh;
+        margin: 0px auto 0 auto;
+        /* Sass of the error's image. It set the margin to center the image and the width.
+             The responsive adapt the image at two different sizes */
         &__image{
             margin: 0 auto 0 auto;
             width: 30%;
@@ -28,9 +29,9 @@
                 padding-top: 10%;
             };
         }
-        // CSS of the title. It set the margin, change the color, the size and align the text in the center
+        // Sass of the title. It set the margin, change the color, the size and align the text in the center
         &__title{
-            margin: auto;
+            margin: 0 auto 40px auto;
             color:$tertiary-color;
             font-size: 36px;
             text-align:center;
@@ -49,9 +50,8 @@
                 font-size: 18px;
             };
         }
-
     }
-    // CSS of the Link. It set the magin to auto to center it, set the color and the font size.
+    // Sass of the Link. It set the magin to auto to center it, set the color and the font size.
     &__link{
         margin: auto;
         color:$tertiary-color;

@@ -1,15 +1,18 @@
 @import '../../sass/Utils/variables.scss'; 
 
-// Sass of the footer container
+/* Sass of the footer container, the height and with are set
+     and the image and text are organized with flexbox. */
 .footer-container {
-    position: absolute;
-    bottom: 0;
     height: 209px;
     width: 100%;
     background-color: $quaternary-color;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media only screen and (max-width: 750px) {
+        height: 180px;
+    };
+        // Sass of the logo. The padding is set to lower the image.
         &__logo{
             padding-top:66px;
         }
@@ -19,6 +22,7 @@
             font-size: 24px;
             margin: 0;
             padding-top:2%;
+            // Two responsive size are set the change the font size to make it more responsive.
             @media only screen and (max-width: 750px) {
                 font-size: 16px;
             };

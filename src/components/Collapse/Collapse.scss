@@ -4,17 +4,10 @@
 .collapse-container{
     display: flex; 
     flex-direction: row;
-    margin: auto;
     max-width:1023px;
-    margin-top: 31px;
-    margin-bottom:  30px;
-
+    margin: 31px auto 0 auto;
     // Responsive of the component 
-    @media only screen and (max-width: 1024px) {
-        padding: 0 50px 0 50px;
-    };
     @media only screen and (max-width: 750px) {
-        padding: 0 20px 0 20px;
         margin-top: 20px;
     };   
 
@@ -25,16 +18,15 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        border: 0;
         width: 100%;
-        border-radius: 5px;
-        height: 47px;
-    
-        @media only screen and (max-width: 520px) {
-            height: 30px;
-        };
+        max-height: 47px;
+        border: 0;
+        border-radius: 5px;   
         @media only screen and (max-width: 1380px) {
             max-width: 100%;
+        };
+        @media only screen and (max-width: 520px) {
+            height: 30px;
         };
 
         // SCSS of the title's bar with 2 sizes responsive changes
@@ -42,12 +34,11 @@
             color: $primary-color;
             font-weight: normal;
             font-size: 24px;
-            padding-left: 18px;
-        
+            padding-left: 18px;   
+            // At two different screen'size the font size is change to make it more responsive     
             @media only screen and (max-width: 750px) {
                 font-size: 16px;
-            };
-        
+            };        
             @media only screen and (max-width: 520px) {
                 font-size: 14px;
             }
@@ -57,8 +48,7 @@
         &__image{
             color: $quaternary-color;
             justify-content: center;
-            padding-right: 18px;
-        
+            padding-right: 18px;       
             @media only screen and (max-width: 750px) {
                 height: 12px;
                 width: 16px;
@@ -74,33 +64,25 @@
     flex-direction: column;
     max-width:1023px;
     margin: 31px auto 30px auto;
-    @media only screen and (max-width: 1024px) {
-        padding: 0 50px 0 50px;
-    };
-    @media only screen and (max-width: 750px) {
-        padding: 0 20px 0 20px;
-        margin-top: 20px;
-    };  
 
     // SCSS of the collapse's description and the responsive 
     &__description{
         max-width: 1023px;
         background-color: $secondary-color;
-        margin: 0;
         color: $tertiary-color;
+        list-style-type: none;   
         font-size: 24px;
         border-radius: 5px;
-        padding: 36px 27px 19px 18px;  
-        list-style-type: none;
-    
+        margin: 0;
+        padding: 25px 27px 25px 18px;  
+        // Responsive that change the font size of the text.
         @media only screen and (max-width: 750px) {
             font-size: 18px;
-            padding: 25px 27px 28px 18px; 
-        };
-    
+        };   
+        // responsive that change the font size and the padding of the text.
         @media only screen and (max-width: 520px) {
             font-size: 14px;
-            padding: 15px 27px 36px 18px; 
+            padding: 15px 27px 10px 18px; 
         };
     }
 }

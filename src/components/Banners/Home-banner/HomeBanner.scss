@@ -2,11 +2,12 @@
 
 // SCSS of the banner component in the home page with the media queries for the responsive
 .home-banner-container{
+    position: relative;
     display:flex;
     justify-content: center;
-    padding: 43px 100px 43px 100px;
-    max-height: 223px;
     align-items: center;
+    max-height: 223px;
+    padding: 43px 100px 43px 100px;
     @media only screen and (max-width: 1024px) {
         padding: 30px 50px 0 50px;
     };
@@ -16,14 +17,14 @@
     @media only screen and (max-width: 500px) {
         justify-content: flex-start;
     };
-    // Image of the home banner component with a responsive at 750px and under
+    // Image of the home banner component with a responsive at 750px
     &__image{
-        border-radius: 25px;
-        max-width: 100%;
         height: auto;
         object-fit: cover;
+        max-width: 100%;
+        border-radius: 25px;
+        // Here filter is use to make the image darker.
         filter: brightness(60%);
-
         @media only screen and (max-width: 750px) {
             border-radius: 10px;
             height: 111px;
@@ -31,7 +32,8 @@
         };
     }
 
-    // Title of the home banner component with 3 responsive sizes
+    /* The title of the banner wich is set with the position to 
+        overlap the picture and the responsive to adapt the text size */
     &__title{
         position: absolute;
         font-weight: 500;
@@ -44,9 +46,9 @@
         @media only screen and (max-width: 850px) {
             font-size: 24px;
         };
-        
+        /* Here column is use to at the span in the text go to 
+            the line when the screen with is 500px or under. */
         @media only screen and (max-width: 500px) {
-            // font-size: 15px;
             width: 217px;
             display: flex;
             flex-direction: column;

@@ -2,9 +2,8 @@
 .A-propos-banner-container{
     display:flex;
     justify-content: center;
-    padding: 43px 100px 0 100px;
     height: 223px;
-    
+    padding: 43px 100px 0 100px;
     @media only screen and (max-width: 1024px) {
         padding: 30px 50px 0 50px;
     };
@@ -12,28 +11,28 @@
         padding: 20px 20px 0 20px;
     };
     
-    // SCSS of the image version laptop wich is display until the  screen size of 375px
+    // SCSS of the image version laptop wich is display until the screen size change at 375px width
     &__image-desktop{
-        border-radius: 25px;
         max-width: 100%;
         object-fit: cover;
         display: block;
+        border-radius: 25px;
         opacity: 0.8;
-
+        // Display none is use to stop display the picture
         @media only screen and (max-width: 375px) {
             display: none; 
         }; 
     }
 
-    // SCSS of the image version mobile wish is diplay when the screen is of the size of 375px or less
+    /* SCSS of the image version mobile which is diplay when the screen is of the size of 375px or less.
+         Display block is use in the responsive to start di play the picture */
     &__image-mobile{
-        // background-image: url();
         display: none;
         opacity: 0.8;
         @media only screen and (max-width: 375px) {
+            width: 100%;
             display: block;
             border-radius: 10px;
-            width: 100%;
             object-fit: cover;
         };
     }

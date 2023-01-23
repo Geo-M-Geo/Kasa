@@ -3,7 +3,8 @@ import vectorDown from '../../assets/vector_down.png'
 import vectorUp from '../../assets/vector_up.png'
 import"../Collapse/Collapse.scss";
 
-// The collapse compoenent contain a ternaire condition that display a bar with a title and an image or if the user click on it, it open a text with under it.
+/* The collapse component contain a ternaire condition that display a bar with a title and an arrow,
+     if the user click on it, it open a text under it. */
 function Collapse({title, description}) {
 
     // UseState that keep the actual state of the bar then give a fonction to change it. Its set on true 
@@ -24,6 +25,7 @@ function Collapse({title, description}) {
                     <h3 className='collapse-container__button__title'>{title}</h3>
                     <img className='collapse-container__button__image' src={vectorUp} alt="flèche vers le haut"/>
                 </button>
+                {/* Paragraph that contain the text */}
                 <p className='collapse-container-open__description'>
                     {description}
                 </p>            

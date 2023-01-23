@@ -1,9 +1,8 @@
 import BannerPicture from '../../../assets/Home_background.png'
 import '../Home-banner/HomeBanner.scss'
 
-
 // Home Banner is a component who display a picture and a text inside the picture for the Home page
-function Banner() {
+function HomeBanner() {
     return (
         <div className='home-banner-container'>
             <img className='home-banner-container__image' src={BannerPicture} alt='Image de la banniere du site' />
@@ -12,4 +11,4 @@ function Banner() {
         </div>
     )
 };
-export default Banner
+export default HomeBanner

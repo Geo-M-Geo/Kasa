@@ -1,0 +1,6 @@
+// Sass of the ratin function. It set the margin to position the elements.
+.rating-container{
+    @media only screen and (max-width: 674px) {
+        margin: auto 0px;
+    }
+}

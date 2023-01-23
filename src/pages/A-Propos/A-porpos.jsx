@@ -2,13 +2,14 @@ import AProposBanner from "../../components/Banners/A-propos-banner/AProposBanne
 import Collapse from '../../components/Collapse/Collapse'
 import"../A-Propos/A-propos.scss";
 
-// A propos page. It contain a banner and 4 collapses container with informations about the websits given in the props.
+// A propos page. It contain a banner and 4 collapses container with informations of the website given in the props.
 function APropos() {
     return ( 
         <div>
+            {/* Call of the A propos banner */}
             <AProposBanner />
-            <div className="container" >
-                {/* Each Collapse component is given all the props to display */}
+            <div className="collapses-container" >
+                {/* Each Collapse component is given all the props to display what is inside */}
             <Collapse title='Fiabilité' description='Les annonces postées sur Kasa garantissent une fiabilité totale. 
                 Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.'/>
             <Collapse title='Respect' description='La bienveillance fait partie des valeurs fondatrices de Kasa. 
@@ -21,5 +22,4 @@ function APropos() {
         </div>
     )
 }
-
 export default APropos

@@ -6,9 +6,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 1240px;
     padding: 40px 100px 0 100px;
     margin: 0 auto;
-    max-width: 1240px;
     // Responsive of the header container
     @media only screen and (max-width: 1024px) {
         padding: 20px 50px 0 50px;
@@ -16,11 +16,10 @@
     @media only screen and (max-width: 750px) {
         padding: 20px 20px 0 20px;
     };
-    // Sass and responsive of the website' logo 
+    // Responsive of the website's logo 
     &__logo {
         @media only screen and (max-width: 750px) {
             max-width: 100%;
-            height: auto;
         };
     }
     // Sass and responsive of the nav bar container
@@ -28,6 +27,7 @@
         width: 200px;
         display: flex;
         justify-content: space-between;
+        // Responsive that change the caracter to capital at a wdth of 520px.
         @media only screen and (max-width: 520px) {
             text-transform: uppercase;
             margin-left: 50px;
@@ -35,7 +35,8 @@
         @media only screen and (max-width: 350px) {
             margin-left: 20px;
         };
-        // Sass of the two navbar's link 
+        /* Sass of the two navbar's link. it set the color, take of full time
+             underline and set it one when the mouse is over it. */
         &__links{
             color: #FF6060;
             font-size: 20px;
@@ -49,6 +50,4 @@
             };
         }
     }
-
-
 }

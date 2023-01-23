@@ -1,65 +1,102 @@
 @import '../../sass/Utils/variables.scss';
 
+/* Sass of the logement page, it contain the carousel componant and the informations about the
+     appartement and the host,  It set the height of the page,the margin and the padding to 0 */
 .logement{
-    max-height: 65vh;
+    min-height: 80vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sass of the logement main, */
+.logement-main{
+    min-height: 40vh;
     margin: 30px 100px 0 100px;
     max-width: 1240px;
-    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
     @media only screen and (min-width: 1440px) {
         margin:43px auto 0 auto;
     }
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1040px) {
         margin: 30px 50px 0 50px;
     };
     @media only screen and (max-width: 750px) {
         margin: 20px 20px 0 20px;
     };
 
-
-
     &__container{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         height: 120px;
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 674px) {
             flex-direction: column;
+            height: 100%;
         }
 
         &__infos{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         color: $tertiary-color;
-            justify-content: space-between;
+        // @media only screen and (max-width: 674px) {
+        //     display: flex;
+        //     flex-direction: column;
+        // }
             &__title{
                 font-size: 36px;
                 margin: 0;
                 font-weight: 500;
+                @media only screen and (max-width: 450px) {
+                    font-size: 18px;
+                }
+                @media only screen and (max-width: 940px) {
+                    font-size: 25px;
+                }
             }
             &__location{
                 font-size: 18px;
                 font-weight: 500;
                 margin: 0;
+                @media only screen and (max-width: 674px) {
+                    margin: 10px 0;
+                    font-size: 14px;
+                }
+                
 
             }
-            &__tags{
+            &__tags {
                 margin: 0;
                 display: flex;
                 flex-direction: row;
                 list-style: none;
                 color: white;
                 padding: 0;
-                text-align: center;
                 font-size: 14px;
+                @media only screen and (max-width: 674px) {
+                    margin: 10px 0;
+                    // font-size: 14px;
+                }
                 
                 & li {
+                    // text-align: center;
+                    width: 140px;
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
                     height: 22px;
-                    width: 115px;
                     background-color: $tertiary-color;
                     border-radius: 10px;
                     margin-right: 10px;
                     padding-top: 3px;
+                    @media only screen and (max-width: 450px) {
+                        font-size: 10px;
+                    }
+                    @media only screen and (max-width: 350px) {
+                        font-size: 8px;
+                    }
                 }
             }
         }
@@ -68,6 +105,9 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            @media only screen and (max-width: 674px) {
+                flex-direction: row-reverse;
+            }
             &__info{
                 display: flex;
                 flex-direction: row;
@@ -88,46 +128,24 @@
                 }
             }
         }
-
     }
-
-    &__collapse{
-        margin-top: 24px;
+    
+    &__collapse {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        max-width: 1240px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
+        :hover {
+            cursor: pointer;
+        }
+        @media only screen and (max-width: 450px) {
+            flex-direction: column;
+        }
         &__element{
             width: 47%;
-            @media only screen and (max-width: 1024px) {
-            // width: 50%;
-
-            };
-
-        }
-
-    .collapse-container__button{
-        margin:auto;
-        padding: 10px;
-
-        @media only screen and (max-width: 1380px) {
-            max-width: 100%;
-        };
-    }
-
-    .collapse-container {
-        padding: 0;
-    }
-
-    .collapse-container-open {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-        .collapse-container{
-            margin: 0;
-            // padding-bottom: 30px;
+            @media only screen and (max-width: 450px) {
+                width: 100%;
+            }
         }
     }
 }
