@@ -5,8 +5,9 @@ import Logement from '../pages/Logement/Logement';
 import Erreur from '../pages/Erreur/Erreur';
 import Header from '../components/Header/header';
 import Footer from '../components/Footer/footer';
-// Function that contain all the routes, the Home page, the about page, the logement page and the error page
 
+/*Function that contain all the routes, the Home page, the about page, the logement page and the error page.
+     Outside the routes there is the header and footer that are include whatever route is chosen. */
 function PagesRoutes() {
     return (
         <BrowserRouter>

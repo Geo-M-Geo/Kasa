@@ -8,47 +8,48 @@
     padding: 0;
 }
 
-/* Sass of the logement main, */
+/* Sass of the logement main, the height, width, margin and element are set usin flex-box. */
 .logement-main{
     min-height: 40vh;
-    margin: 30px 100px 0 100px;
     max-width: 1240px;
     display: flex;
     flex-direction: column;
+    margin: 30px 100px 0 100px;
+    // Responsive of the main which change the largin to positionn the container width different screen sizes.
     @media only screen and (min-width: 1440px) {
         margin:43px auto 0 auto;
     }
-
     @media only screen and (max-width: 1040px) {
         margin: 30px 50px 0 50px;
     };
     @media only screen and (max-width: 750px) {
         margin: 20px 20px 0 20px;
     };
-
+    /* Sass of the logement main container? it contain all the element apart from the collapse.
+         It set the height and the position with flexbox */
     &__container{
+        height: 120px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        height: 120px;
+        // Responsive, it set the height and change the direction to column for smaller screens. 
         @media only screen and (max-width: 674px) {
-            flex-direction: column;
             height: 100%;
+            flex-direction: column;
         }
-
+        /* Sass of the infos container. it set the direction and space the 
+            elements between each other and set the color of the texts*/
         &__infos{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         color: $tertiary-color;
-        // @media only screen and (max-width: 674px) {
-        //     display: flex;
-        //     flex-direction: column;
-        // }
+        // Sass of the title. It set the font size, the font weight and the margin
             &__title{
                 font-size: 36px;
-                margin: 0;
                 font-weight: 500;
+                margin: 0;
+                // Responsive, it change the font size in two different screen sizes.
                 @media only screen and (max-width: 450px) {
                     font-size: 18px;
                 }
@@ -56,41 +57,42 @@
                     font-size: 25px;
                 }
             }
+            // Sass of the location. It set the font size, the font weight and the margin.
             &__location{
                 font-size: 18px;
                 font-weight: 500;
                 margin: 0;
+                // Responsive? It change the font size and the margin.
                 @media only screen and (max-width: 674px) {
                     margin: 10px 0;
                     font-size: 14px;
                 }
-                
-
+            // Sass of the tags container, it set the elements into row, the padding, the margin and the font setting.  
             }
             &__tags {
-                margin: 0;
                 display: flex;
                 flex-direction: row;
                 list-style: none;
-                color: white;
+                margin: 0;
                 padding: 0;
+                color: white;
                 font-size: 14px;
+                // Responsive, it change the margin at 674px and under
                 @media only screen and (max-width: 674px) {
                     margin: 10px 0;
-                    // font-size: 14px;
                 }
-                
+                // Sass of each tag element, set the size, how they are center in the element, the background color, the margin and the padding.
                 & li {
-                    // text-align: center;
                     width: 140px;
-                    justify-content: center;
-                    display: flex;
-                    align-items: center;
                     height: 22px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     background-color: $tertiary-color;
                     border-radius: 10px;
                     margin-right: 10px;
                     padding-top: 3px;
+                    // Responsive, it change the font size of the text at two different breakpoint.
                     @media only screen and (max-width: 450px) {
                         font-size: 10px;
                     }
@@ -100,47 +102,50 @@
                 }
             }
         }
-
+        /* Sass of the host container with the infos and the rating inside,
+             the elements will be display with flexbox in column with a space between them.*/
         &__host{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            // Responsive, at 674px and under the display will change into row so the element will be next to each other.
             @media only screen and (max-width: 674px) {
                 flex-direction: row-reverse;
             }
+            // Sass of the info element, set with flexbox and display in row.
             &__info{
                 display: flex;
                 flex-direction: row;
+                // Sass of the name, flexbox display it into a column, the color is chosen en its align on the right
                 &__name{
-                    padding-right: 10px;
                     width: 80px;
-                    text-align: right;
                     display: flex;
                     flex-direction: column;
-                color: $tertiary-color;
-                font-weight: 500;
+                    color: $tertiary-color;
+                    text-align: right;
+                    font-weight: 500;
+                    padding-right: 10px;
                 }
-
+                // Sass of the picture element, the height, width and border.
                 &__picture{
-                    border-radius: 50%;
                     height: 64px;
                     width: 64px;
+                    border-radius: 50%;
                 }
             }
         }
     }
-    
+    // Sass of the collapses, they're display with flexbox into a row and there is a space between them.
     &__collapse {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding-bottom: 20px;
-        :hover {
-            cursor: pointer;
-        }
+        // Responsive, at 450px and under the display become column instead of row.
         @media only screen and (max-width: 450px) {
             flex-direction: column;
         }
+        // Sass of each element who contain each collapse. The width is set then the responsive change the with at 450px and under.
         &__element{
             width: 47%;
             @media only screen and (max-width: 450px) {

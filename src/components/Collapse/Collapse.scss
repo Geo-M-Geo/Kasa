@@ -6,6 +6,10 @@
     flex-direction: row;
     max-width:1023px;
     margin: 31px auto 0 auto;
+    // When the mouse is over the collapse bar the cursor change to look clickable
+    :hover {
+        cursor: pointer;
+    }
     // Responsive of the component 
     @media only screen and (max-width: 750px) {
         margin-top: 20px;
@@ -64,7 +68,10 @@
     flex-direction: column;
     max-width:1023px;
     margin: 31px auto 30px auto;
-
+    // When the mouse is over the collapse bar the cursor change to look clickable
+    :hover {
+        cursor: pointer;
+    }
     // SCSS of the collapse's description and the responsive 
     &__description{
         max-width: 1023px;
