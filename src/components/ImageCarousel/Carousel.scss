@@ -1,3 +1,6 @@
+@import '../../sass/Utils/variables.scss'; 
+@import '../../sass/Utils/mixin.scss'; 
+
 // Sass of the carousel container. His position is relative so the other element can overlap it.
 .carousel-container {
     max-width: 1240px;
@@ -7,10 +10,10 @@
     @media only screen and (min-width: 1440px) {
         margin: 25px auto 0 auto;
     };
-    @media only screen and (max-width: 1024px) {
+    @include laptop {
         margin: 25px 50px 0 50px;
     };
-    @media only screen and (max-width: 750px) {
+    @include large-tablet {
         margin: 20px 20px 0 20px;
         max-height: 255px;
     };
@@ -22,7 +25,7 @@
         border-radius: 25px;
         object-fit: cover;
     }
-    @media only screen and (max-width: 750px) {
+    @include large-tablet {
         max-height: 255px;
     };
     /* Sass of the previous button. Its position is absolute so it can overlap
@@ -34,11 +37,11 @@
         :hover {
             cursor: pointer;
         }
-        @media only screen and (max-width: 1024px) {
+        @include laptop {
             width: 40px;
             height: 70px;
         };
-        @media only screen and (max-width: 750px) {
+        @include large-tablet {
             width: 30px;
             height: 50px;
         };
@@ -56,11 +59,11 @@
         img:hover {
             cursor: pointer;
         };
-        @media only screen and (max-width: 1024px) {
+        @include laptop {
             width: 40px;
             height: 70px;
         };
-        @media only screen and (max-width: 750px) {
+        @include large-tablet {
             width: 30px;
             height: 50px;
         };

@@ -1,6 +1,6 @@
 @import"../sass/Utils/variables";
+@import"../sass/Utils/mixin";
 
-// Components : 
 @import"../components/Header/header.scss";
 @import"../components/Footer/footer.scss";
 @import"../components/AllCards/AllCards.scss";
@@ -10,7 +10,7 @@
 @import"../components/ImageCarousel/Carousel.scss";
 @import"../components/Rating/Rating.scss";
 
-// Pages :
+
 @import"../pages/Home/Home.scss";
 @import"../pages/Logement/Logement.scss";
 @import"../pages/A-Propos/A-propos.scss";

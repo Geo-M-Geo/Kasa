@@ -1,0 +1,40 @@
+@mixin medium-mobile {
+    @media all and (max-width:map-get($breakpoints, medium-mobile-size )){
+        @content
+    }
+};
+
+@mixin mobile {
+    @media all and (max-width:map-get($breakpoints, mobile-size )){
+        @content
+    }
+}
+
+@mixin small-tablet {
+    @media all and (max-width:map-get($breakpoints, small-tablet-size )){
+        @content
+    }
+}
+
+@mixin medium-tablet {
+    @media all and (max-width:map-get($breakpoints, medium-tablet-size )){
+        @content
+    }
+}
+
+@mixin large-tablet {
+    @media all and (max-width:map-get($breakpoints, large-tablet-size )){
+        @content
+    }
+}
+
+@mixin extra-large-tablet {
+    @media all and (max-width:map-get($breakpoints, extra-large-tablet-size )){
+        @content
+    }
+}
+@mixin laptop {
+    @media all and (max-width:map-get($breakpoints, laptop-size )){
+        @content
+    }
+}

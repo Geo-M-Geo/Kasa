@@ -1,4 +1,6 @@
-@import '../../sass/Utils/variables.scss';
+@import '../../sass/Utils/variables';
+@import '../../sass/Utils/mixin';
+
 
 /* Sass of the logement page, it contain the carousel componant and the informations about the
      appartement and the host,  It set the height of the page,the margin and the padding to 0 */
@@ -22,7 +24,7 @@
     @media only screen and (max-width: 1040px) {
         margin: 30px 50px 0 50px;
     };
-    @media only screen and (max-width: 750px) {
+    @include large-tablet {
         margin: 20px 20px 0 20px;
     };
     /* Sass of the logement main container? it contain all the element apart from the collapse.
@@ -33,7 +35,7 @@
         flex-direction: row;
         justify-content: space-between;
         // Responsive, it set the height and change the direction to column for smaller screens. 
-        @media only screen and (max-width: 674px) {
+        @include medium-tablet{
             height: 100%;
             flex-direction: column;
         }
@@ -50,7 +52,7 @@
                 font-weight: 500;
                 margin: 0;
                 // Responsive, it change the font size in two different screen sizes.
-                @media only screen and (max-width: 450px) {
+                @include medium-mobile {
                     font-size: 18px;
                 }
                 @media only screen and (max-width: 940px) {
@@ -63,7 +65,7 @@
                 font-weight: 500;
                 margin: 0;
                 // Responsive? It change the font size and the margin.
-                @media only screen and (max-width: 674px) {
+                @include medium-tablet {
                     margin: 10px 0;
                     font-size: 14px;
                 }
@@ -78,7 +80,7 @@
                 color: white;
                 font-size: 14px;
                 // Responsive, it change the margin at 674px and under
-                @media only screen and (max-width: 674px) {
+                @include medium-tablet {
                     margin: 10px 0;
                 }
                 // Sass of each tag element, set the size, how they are center in the element, the background color, the margin and the padding.
@@ -93,7 +95,7 @@
                     margin-right: 10px;
                     padding-top: 3px;
                     // Responsive, it change the font size of the text at two different breakpoint.
-                    @media only screen and (max-width: 450px) {
+                    @include medium-mobile {
                         font-size: 10px;
                     }
                     @media only screen and (max-width: 350px) {
@@ -109,7 +111,7 @@
             flex-direction: column;
             justify-content: space-between;
             // Responsive, at 674px and under the display will change into row so the element will be next to each other.
-            @media only screen and (max-width: 674px) {
+            @include medium-tablet {
                 flex-direction: row-reverse;
             }
             // Sass of the info element, set with flexbox and display in row.
@@ -142,13 +144,13 @@
         justify-content: space-between;
         padding-bottom: 20px;
         // Responsive, at 450px and under the display become column instead of row.
-        @media only screen and (max-width: 450px) {
+        @include medium-mobile {
             flex-direction: column;
         }
         // Sass of each element who contain each collapse. The width is set then the responsive change the with at 450px and under.
         &__element{
             width: 47%;
-            @media only screen and (max-width: 450px) {
+            @include medium-mobile {
                 width: 100%;
             }
         }

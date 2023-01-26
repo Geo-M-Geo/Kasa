@@ -7,17 +7,17 @@
   padding: 40px 100px 0 100px;
   margin: 0 auto;
 }
-@media only screen and (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   .header-container {
     padding: 20px 50px 0 50px;
   }
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .header-container {
     padding: 20px 20px 0 20px;
   }
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .header-container__logo {
     max-width: 100%;
   }
@@ -29,7 +29,7 @@
   /* Sass of the two navbar's link. it set the color, take of full time
        underline and set it one when the mouse is over it. */
 }
-@media only screen and (max-width: 520px) {
+@media all and (max-width: 520px) {
   .header-container__list {
     text-transform: uppercase;
     margin-left: 50px;
@@ -48,7 +48,7 @@
 .header-container__list__links :hover {
   text-decoration: underline;
 }
-@media only screen and (max-width: 520px) {
+@media all and (max-width: 520px) {
   .header-container__list__links {
     font-size: 12px;
     font-weight: 500;
@@ -65,7 +65,7 @@
   flex-direction: column;
   align-items: center;
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .footer-container {
     height: 180px;
   }
@@ -79,12 +79,12 @@
   margin: 0;
   padding-top: 2%;
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .footer-container__title {
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 520px) {
+@media all and (max-width: 520px) {
   .footer-container__title {
     font-size: 14px;
   }
@@ -112,19 +112,19 @@
     margin: 0 auto 0 auto;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   .appartements-container {
     margin: 30px 50px 0 50px;
   }
 }
-@media only screen and (max-width: 810px) {
+@media all and (max-width: 810px) {
   .appartements-container {
     flex-direction: column;
     align-items: center;
     padding-bottom: 30px;
   }
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .appartements-container {
     margin: 20px 20px 0 20px;
     border-radius: 10px;
@@ -139,7 +139,7 @@
   /* SCSS of each appartement title with overflow-wrap which force the word to go to the 
       line if there is not enough space and the media querie for the responsive */
 }
-@media only screen and (max-width: 810px) {
+@media all and (max-width: 810px) {
   .appartements-container__appartement {
     width: 90%;
     display: flex;
@@ -148,7 +148,7 @@
     height: 90%;
   }
 }
-@media only screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
   .appartements-container__appartement {
     padding: 20px 0 0 0;
   }
@@ -162,12 +162,12 @@
   left: 30px;
   font-size: 18px;
 }
-@media only screen and (max-width: 810px) {
+@media all and (max-width: 810px) {
   .appartements-container__appartement__title {
     bottom: 20px;
   }
 }
-@media only screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
   .appartements-container__appartement__title {
     font-size: 14px;
     bottom: 10px;
@@ -180,7 +180,7 @@
   object-fit: cover;
   border-radius: 10px;
 }
-@media only screen and (max-width: 810px) {
+@media all and (max-width: 810px) {
   .appartements-container__appartement__picture {
     width: 100%;
   }
@@ -194,12 +194,12 @@
   /* SCSS of the image version mobile which is diplay when the screen is of the size of 375px or less.
        Display block is use in the responsive to start di play the picture */
 }
-@media only screen and (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   .A-propos-banner-container {
     padding: 30px 50px 0 50px;
   }
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .A-propos-banner-container {
     padding: 20px 20px 0 20px;
   }
@@ -239,17 +239,17 @@
   /* The title of the banner wich is set with the position to 
       overlap the picture and the responsive to adapt the text size */
 }
-@media only screen and (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   .home-banner-container {
     padding: 30px 50px 0 50px;
   }
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .home-banner-container {
     padding: 20px 20px 0 20px;
   }
 }
-@media only screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
   .home-banner-container {
     justify-content: flex-start;
   }
@@ -261,7 +261,7 @@
   border-radius: 25px;
   filter: brightness(60%);
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .home-banner-container__image {
     border-radius: 10px;
     height: 111px;
@@ -286,7 +286,7 @@
     font-size: 24px;
   }
 }
-@media only screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
   .home-banner-container__title {
     width: 217px;
     display: flex;
@@ -304,7 +304,7 @@
 .collapse-container :hover {
   cursor: pointer;
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .collapse-container {
     margin-top: 20px;
   }
@@ -325,7 +325,7 @@
     max-width: 100%;
   }
 }
-@media only screen and (max-width: 520px) {
+@media all and (max-width: 520px) {
   .collapse-container__button {
     height: 30px;
   }
@@ -336,12 +336,12 @@
   font-size: 24px;
   padding-left: 18px;
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .collapse-container__button__title {
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 520px) {
+@media all and (max-width: 520px) {
   .collapse-container__button__title {
     font-size: 14px;
   }
@@ -351,7 +351,7 @@
   justify-content: center;
   padding-right: 18px;
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .collapse-container__button__image {
     height: 12px;
     width: 16px;
@@ -377,12 +377,12 @@
   margin: 0;
   padding: 25px 27px 25px 18px;
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .collapse-container-open__description {
     font-size: 18px;
   }
 }
-@media only screen and (max-width: 520px) {
+@media all and (max-width: 520px) {
   .collapse-container-open__description {
     font-size: 14px;
     padding: 15px 27px 10px 18px;
@@ -408,12 +408,12 @@
     margin: 25px auto 0 auto;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   .carousel-container {
     margin: 25px 50px 0 50px;
   }
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .carousel-container {
     margin: 20px 20px 0 20px;
     max-height: 255px;
@@ -425,7 +425,7 @@
   border-radius: 25px;
   object-fit: cover;
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .carousel-container {
     max-height: 255px;
   }
@@ -438,13 +438,13 @@
 .carousel-container__previous-button :hover {
   cursor: pointer;
 }
-@media only screen and (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   .carousel-container__previous-button {
     width: 40px;
     height: 70px;
   }
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .carousel-container__previous-button {
     width: 30px;
     height: 50px;
@@ -464,13 +464,13 @@
 .carousel-container__next-button img:hover {
   cursor: pointer;
 }
-@media only screen and (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   .carousel-container__next-button {
     width: 40px;
     height: 70px;
   }
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .carousel-container__next-button {
     width: 30px;
     height: 50px;
@@ -490,7 +490,7 @@
   font-weight: bolder;
 }
 
-@media only screen and (max-width: 674px) {
+@media all and (max-width: 674px) {
   .rating-container {
     margin: auto 0px;
   }
@@ -528,7 +528,7 @@
     margin: 30px 50px 0 50px;
   }
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .logement-main {
     margin: 20px 20px 0 20px;
   }
@@ -543,7 +543,7 @@
   /* Sass of the host container with the infos and the rating inside,
        the elements will be display with flexbox in column with a space between them.*/
 }
-@media only screen and (max-width: 674px) {
+@media all and (max-width: 674px) {
   .logement-main__container {
     height: 100%;
     flex-direction: column;
@@ -560,7 +560,7 @@
   font-weight: 500;
   margin: 0;
 }
-@media only screen and (max-width: 450px) {
+@media all and (max-width: 450px) {
   .logement-main__container__infos__title {
     font-size: 18px;
   }
@@ -575,7 +575,7 @@
   font-weight: 500;
   margin: 0;
 }
-@media only screen and (max-width: 674px) {
+@media all and (max-width: 674px) {
   .logement-main__container__infos__location {
     margin: 10px 0;
     font-size: 14px;
@@ -590,7 +590,7 @@
   color: white;
   font-size: 14px;
 }
-@media only screen and (max-width: 674px) {
+@media all and (max-width: 674px) {
   .logement-main__container__infos__tags {
     margin: 10px 0;
   }
@@ -606,7 +606,7 @@
   margin-right: 10px;
   padding-top: 3px;
 }
-@media only screen and (max-width: 450px) {
+@media all and (max-width: 450px) {
   .logement-main__container__infos__tags li {
     font-size: 10px;
   }
@@ -621,7 +621,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-@media only screen and (max-width: 674px) {
+@media all and (max-width: 674px) {
   .logement-main__container__host {
     flex-direction: row-reverse;
   }
@@ -650,7 +650,7 @@
   justify-content: space-between;
   padding-bottom: 20px;
 }
-@media only screen and (max-width: 450px) {
+@media all and (max-width: 450px) {
   .logement-main__collapse {
     flex-direction: column;
   }
@@ -658,24 +658,22 @@
 .logement-main__collapse__element {
   width: 47%;
 }
-@media only screen and (max-width: 450px) {
+@media all and (max-width: 450px) {
   .logement-main__collapse__element {
     width: 100%;
   }
-}
-
-/* SCSS of the A propos page who contain the collapses components, 
+} /* SCSS of the A propos page who contain the collapses components, 
     it contain the height and the responsive for the full container */
 .collapses-container {
   margin: 43px 100px 50px 100px;
   min-height: 50vh;
 }
-@media only screen and (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   .collapses-container {
     margin: 0 50px 0 50px;
   }
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .collapses-container {
     margin: 0 20px;
   }
@@ -701,12 +699,12 @@
   margin: 0 auto 0 auto;
   width: 30%;
 }
-@media only screen and (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   .error-container__top__image {
     width: 40%;
   }
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .error-container__top__image {
     width: 50%;
     margin: auto auto 0 auto;
@@ -719,19 +717,19 @@
   font-size: 36px;
   text-align: center;
 }
-@media only screen and (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   .error-container__top__title {
     font-size: 25px;
   }
 }
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
   .error-container__top__title {
     margin: 5% auto auto auto;
     display: flex;
     flex-direction: column;
   }
 }
-@media only screen and (max-width: 520px) {
+@media all and (max-width: 520px) {
   .error-container__top__title {
     font-size: 18px;
   }
@@ -741,7 +739,7 @@
   color: #FF6060;
   font-size: 18px;
 }
-@media only screen and (max-width: 520px) {
+@media all and (max-width: 520px) {
   .error-container__link {
     font-size: 14px;
   }

@@ -1,4 +1,5 @@
 @import '../../sass/Utils/variables.scss'; 
+@import'../../sass/Utils/mixin';
 
 /* Sass of the footer container, the height and with are set
      and the image and text are organized with flexbox. */
@@ -9,7 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media only screen and (max-width: 750px) {
+    @include large-tablet {
         height: 180px;
     };
         // Sass of the logo. The padding is set to lower the image.
@@ -23,10 +24,10 @@
             margin: 0;
             padding-top:2%;
             // Two responsive size are set the change the font size to make it more responsive.
-            @media only screen and (max-width: 750px) {
+            @include large-tablet {
                 font-size: 16px;
             };
-            @media only screen and (max-width: 520px) {
+            @include small-tablet {
                 font-size: 14px;
             };
         }

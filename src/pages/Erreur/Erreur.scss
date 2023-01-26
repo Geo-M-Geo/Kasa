@@ -1,4 +1,6 @@
-@import'../../sass/Utils/variables.scss';
+@import'../../sass/Utils/variables';
+@import'../../sass/Utils/mixin';
+
 
 // Sass of the Error's main container that is display with flex-box 
 .error-container{
@@ -19,11 +21,11 @@
             margin: 0 auto 0 auto;
             width: 30%;
             // Media queries of the image to make it bigger
-            @media only screen and (max-width: 1024px) {
+            @include laptop {
                 width: 40%;
             };
             // Media queries of the image to make it bigger then change the margin to lower the image.
-            @media only screen and (max-width: 750px) {
+            @include large-tablet {
                 width: 50%;
                 margin: auto auto 0 auto;
                 padding-top: 10%;
@@ -36,17 +38,17 @@
             font-size: 36px;
             text-align:center;
             // Media queries of the title. It reduce the font size
-            @media only screen and (max-width: 1024px) {
+            @include laptop {
                 font-size: 25px;
             };
             // Media queries of the title. It change the margin top from auto to 5% and change the diplay of the title to make it in two lines
-            @media only screen and (max-width: 750px) {
+            @include large-tablet {
                 margin: 5% auto auto auto;
                 display: flex;
                 flex-direction: column;
             };
             // Media queries of the title. It change the font size to smaller 
-            @media only screen and (max-width: 520px) {
+            @include small-tablet {
                 font-size: 18px;
             };
         }
@@ -57,7 +59,7 @@
         color:$tertiary-color;
         font-size: 18px;
         // Media queries of the Link. It change the font size.
-        @media only screen and (max-width: 520px) {
+        @include small-tablet {
             font-size: 14px;
         };
     }

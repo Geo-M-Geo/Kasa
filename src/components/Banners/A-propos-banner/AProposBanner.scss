@@ -1,13 +1,15 @@
+@import'../../../sass/Utils/mixin';
+@import'../../../sass/Utils/variables';
 // SCSS of the banner A propos component with the media queries for the responsive
 .A-propos-banner-container{
     display:flex;
     justify-content: center;
     height: 223px;
     padding: 43px 100px 0 100px;
-    @media only screen and (max-width: 1024px) {
+    @include laptop {
         padding: 30px 50px 0 50px;
     };
-    @media only screen and (max-width: 750px) {
+    @include large-tablet {
         padding: 20px 20px 0 20px;
     };
     

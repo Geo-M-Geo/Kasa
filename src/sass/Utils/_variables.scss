@@ -1,0 +1,14 @@
+$primary-color: #FFFFFF;  //White 
+$secondary-color: #E5E5E5; // light grey
+$tertiary-color: #FF6060;  // Salmon
+$quaternary-color: #000000;  // Black
+
+$breakpoints: (
+    medium-mobile-size: 450px,
+    mobile-size : 500px,
+    small-tablet-size: 520px,
+    medium-tablet-size: 674px,
+    large-tablet-size: 750px,
+    extra-large-tablet-size: 810px,
+    laptop-size: 1024px
+);

@@ -1,13 +1,16 @@
+@import '../../sass/Utils/variables'; 
+@import '../../sass/Utils/mixin'; 
+
 /* SCSS of the A propos page who contain the collapses components, 
     it contain the height and the responsive for the full container */
 .collapses-container{
     margin: 43px 100px 50px 100px;
     min-height: 50vh;
     // Responsive 
-    @media only screen and (max-width: 1024px) {
+    @include laptop {
         margin: 0 50px 0 50px;
     };
-    @media only screen and (max-width: 750px) {
+    @include large-tablet {
         margin: 0 20px;
     };
 }
