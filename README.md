@@ -1,5 +1,4 @@
 ![Getting Started](./src/assets/logo_desktop.png)
-# Kasa
 
 Kasa has been offering apartment rentals for almost 10 years now, with more than 500 ads posted every day Kasa is one of the leaders in France.
 
@@ -7,9 +6,12 @@ Kasa has been offering apartment rentals for almost 10 years now, with more than
 
 ### Cloner the repository :
 
-`git clone https://github.com/Geo-M-Geo/Kasa.git
-cd kasa
-yarn add kasa`
+`git clone https://github.com/Geo-M-Geo/Kasa.git`
+
+### Instal the project :
+
+`cd kasa`
+`yarn add kasa`
 
 ### Run the app :
 
