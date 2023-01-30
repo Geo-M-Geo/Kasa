@@ -29,8 +29,15 @@ function Carousel({pictures}) {
             2 arrows to go back and foward and a small element that tell which picture's number is display */
         <div className='carousel-container' >
             <img className='carousel-container__image' src={pictures[currentIndex]} alt="image choisi de l'appartement"/>
-            <img className='carousel-container__previous-button' src={vector_back} alt='bouton precedent' onClick={PreviousPicture} />
-            <img className='carousel-container__next-button' src={vector_foward} alt='bouton suivante' onClick={NextPicture} />
+            <div>
+                {pictures.length > 1 ? (
+                    <div>
+                        <img className='carousel-container__previous-button' src={vector_back} alt='bouton precedent' onClick={PreviousPicture} />
+                        <img className='carousel-container__next-button' src={vector_foward} alt='bouton suivante' onClick={NextPicture} /> 
+                    </div>
+                ) : null
+                }
+            </div>
             <p className='carousel-container__picture-number-info' >{currentIndex +1}/{pictures.length}</p>
         </div>
     )
