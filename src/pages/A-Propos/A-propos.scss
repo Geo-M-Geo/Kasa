@@ -8,9 +8,12 @@
     min-height: 50vh;
     // Responsive 
     @include laptop {
-        margin: 0 50px 0 50px;
+        margin: 0 100px 0 100px;
     };
     @include large-tablet {
         margin: 0 20px;
+    };
+    @media only screen and (max-width: 950px) {
+        min-height: 58vh;
     };
 }

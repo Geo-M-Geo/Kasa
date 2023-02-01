@@ -28,7 +28,7 @@ function Carousel({pictures}) {
         /* The div contain 4 elements, the appartements current picture, 
             2 arrows to go back and foward and a small element that tell which picture's number is display */
         <div className='carousel-container' >
-            <img className='carousel-container__image' src={pictures[currentIndex]} alt="image choisi de l'appartement"/>
+            <img className='carousel-container__image' src={pictures[currentIndex]} alt="Appartement séléctionné"/>
             <div>
                 {pictures.length > 1 ? (
                     <div>

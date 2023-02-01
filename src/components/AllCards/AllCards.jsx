@@ -10,10 +10,10 @@ function DisplayCards() {
             {appartements.map(({ id, title, cover }) => 
                 <Link to={`/logement/${id}`} key={id} className='appartements-container__appartement' >
                     <h3 className='appartements-container__appartement__title'>{title}</h3>
-                    <img className='appartements-container__appartement__picture' src={cover} alt="cover picture of the appartement" />
+                    <img className='appartements-container__appartement__picture' src={cover} alt="Aperçu de l'appartement" />
                 </Link>
             )}
         </ul>
     )
 };
-export default DisplayCards
+export default DisplayCards;

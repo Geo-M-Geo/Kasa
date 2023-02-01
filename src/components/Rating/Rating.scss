@@ -6,4 +6,16 @@
     @include medium-tablet {
         margin: auto 0px;
     }
+    &__star {
+        height: 30px;
+        width: 30px;
+        @include small-tablet {
+            height: 25px;
+            width: 25px;
+        }
+        @include medium-mobile {
+            height: 15px;
+            width: 15px;
+        }
+    }
 }

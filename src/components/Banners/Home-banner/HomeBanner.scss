@@ -7,7 +7,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    max-height: 223px;
+    height: 223px;
     padding: 43px 100px 43px 100px;
     @include laptop {
         padding: 30px 50px 0 50px;
@@ -15,12 +15,17 @@
     @include large-tablet {
         padding: 20px 20px 0 20px;
     };
+    @include small-tablet {
+        height: 170px;
+    };
     @include mobile {
+        border-radius: 10px;
         justify-content: flex-start;
+        height: 111px;
     };
     // Image of the home banner component with a responsive at 750px
     &__image{
-        height: auto;
+        height: 100%;
         object-fit: cover;
         max-width: 100%;
         border-radius: 25px;
@@ -28,9 +33,14 @@
         filter: brightness(60%);
         @include large-tablet {
             border-radius: 10px;
-            height: 111px;
+            height: 100%;
             width: 100%;
         };
+        // @include mobile {
+        //     border-radius: 10px;
+        //     height: 111px;
+        //     width: 100%;
+        // };
     }
 
     /* The title of the banner wich is set with the position to 

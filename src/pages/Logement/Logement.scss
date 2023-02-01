@@ -98,9 +98,6 @@
                     @include medium-mobile {
                         font-size: 10px;
                     }
-                    @media only screen and (max-width: 350px) {
-                        font-size: 8px;
-                    }
                 }
             }
         }
@@ -125,14 +122,23 @@
                     flex-direction: column;
                     color: $tertiary-color;
                     text-align: right;
+                    font-size: 18px;
                     font-weight: 500;
                     padding-right: 10px;
+                    @include small-tablet {
+                        font-size: 12px;
+                    }
                 }
                 // Sass of the picture element, the height, width and border.
                 &__picture{
                     height: 64px;
                     width: 64px;
                     border-radius: 50%;
+                    @include small-tablet {
+                        height: 40px;
+                        width: 40px;
+                        margin: auto 0;
+                    }
                 }
             }
         }
@@ -142,7 +148,8 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
+        // padding-bottom: 20px;
         // Responsive, at 450px and under the display become column instead of row.
         @include medium-mobile {
             flex-direction: column;
@@ -150,8 +157,16 @@
         // Sass of each element who contain each collapse. The width is set then the responsive change the with at 450px and under.
         &__element{
             width: 47%;
+            height: 20%;
             @include medium-mobile {
                 width: 100%;
+            }
+            & .collapse-container {
+                padding: 0;
+                margin: 10px 0 10px 0;
+            }
+            &  .collapse-container-open {
+                margin: 10px 0 10px 0;
             }
         }
     }

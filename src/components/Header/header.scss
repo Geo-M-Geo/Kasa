@@ -42,7 +42,7 @@
             color: #FF6060;
             font-size: 20px;
             text-decoration: none;
-            :hover {
+            &:hover {
                 text-decoration: underline;
             };   
             @include small-tablet {
