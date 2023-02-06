@@ -11,8 +11,8 @@ function Header() {
             </Link>
             {/* Nav bar of the header component with two links, one to the Accueil page and one to the A propos page */}
             <nav className='header-container__list'>
-                    <Link className='header-container__list__links' to="/">Accueil</Link>
-                    <Link className='header-container__list__links' to="/A-Propos">A Propos</Link>
+                <Link className='header-container__list__links' to="/">Accueil</Link>
+                <Link className='header-container__list__links' to="/A-Propos">A Propos</Link>
             </nav>
         </header>
     )

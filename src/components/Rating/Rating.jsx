@@ -8,8 +8,8 @@ function Rating({rating}) {
     const ratingArray = [1, 2, 3, 4, 5];
     return (
         <div className='rating-container'>
-{/* The map function go through the ratingArray and compare each number with the rating number 
-    and display an orange star till its superior or equal to the rating number then the next stars will be grey */}
+        {/* The map function go through the ratingArray and compare each number with the rating number 
+            and display an orange star till its superior or equal to the rating number then the next stars will be grey */}
             {ratingArray.map((star, index) => 
                 rating >= star ? (
                     <img className='rating-container__star' key={index} src={orangeStar} alt="Etoile orange donc valide"/>

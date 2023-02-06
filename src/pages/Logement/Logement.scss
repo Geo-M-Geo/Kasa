@@ -2,7 +2,7 @@
 @import '../../sass/Utils/mixin';
 
 
-/* Sass of the logement page, it contain the carousel componant and the informations about the
+/* SCSS of the logement page, it contain the carousel componant and the informations about the
      appartement and the host,  It set the height of the page,the margin and the padding to 0 */
 .logement{
     min-height: 80vh;
@@ -10,7 +10,7 @@
     padding: 0;
 }
 
-/* Sass of the logement main, the height, width, margin and element are set usin flex-box. */
+/* SCSS of the logement main, the height, width, margin and element are set usin flex-box. */
 .logement-main{
     min-height: 40vh;
     max-width: 1240px;
@@ -27,7 +27,7 @@
     @include large-tablet {
         margin: 20px 20px 0 20px;
     };
-    /* Sass of the logement main container? it contain all the element apart from the collapse.
+    /* SCSS of the logement main container? it contain all the element apart from the collapse.
          It set the height and the position with flexbox */
     &__container{
         height: 120px;
@@ -39,14 +39,14 @@
             height: 100%;
             flex-direction: column;
         }
-        /* Sass of the infos container. it set the direction and space the 
+        /* SCSS of the infos container. it set the direction and space the 
             elements between each other and set the color of the texts*/
         &__infos{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         color: $tertiary-color;
-        // Sass of the title. It set the font size, the font weight and the margin
+        // SCSS of the title. It set the font size, the font weight and the margin
             &__title{
                 font-size: 36px;
                 font-weight: 500;
@@ -59,7 +59,7 @@
                     font-size: 25px;
                 }
             }
-            // Sass of the location. It set the font size, the font weight and the margin.
+            // SCSS of the location. It set the font size, the font weight and the margin.
             &__location{
                 font-size: 18px;
                 font-weight: 500;
@@ -69,7 +69,7 @@
                     margin: 10px 0;
                     font-size: 14px;
                 }
-            // Sass of the tags container, it set the elements into row, the padding, the margin and the font setting.  
+            // SCSS of the tags container, it set the elements into row, the padding, the margin and the font setting.  
             }
             &__tags {
                 display: flex;
@@ -83,7 +83,7 @@
                 @include medium-tablet {
                     margin: 10px 0;
                 }
-                // Sass of each tag element, set the size, how they are center in the element, the background color, the margin and the padding.
+                // SCSS of each tag element, set the size, how they are center in the element, the background color, the margin and the padding.
                 & li {
                     width: 140px;
                     height: 22px;
@@ -101,7 +101,7 @@
                 }
             }
         }
-        /* Sass of the host container with the infos and the rating inside,
+        /* SCSS of the host container with the infos and the rating inside,
              the elements will be display with flexbox in column with a space between them.*/
         &__host{
             display: flex;
@@ -111,11 +111,11 @@
             @include medium-tablet {
                 flex-direction: row-reverse;
             }
-            // Sass of the info element, set with flexbox and display in row.
+            // SCSS of the info element, set with flexbox and display in row.
             &__info{
                 display: flex;
                 flex-direction: row;
-                // Sass of the name, flexbox display it into a column, the color is chosen en its align on the right
+                // SCSS of the name, flexbox display it into a column, the color is chosen en its align on the right
                 &__name{
                     width: 80px;
                     display: flex;
@@ -129,7 +129,7 @@
                         font-size: 12px;
                     }
                 }
-                // Sass of the picture element, the height, width and border.
+                // SCSS of the picture element, the height, width and border.
                 &__picture{
                     height: 64px;
                     width: 64px;
@@ -143,18 +143,17 @@
             }
         }
     }
-    // Sass of the collapses, they're display with flexbox into a row and there is a space between them.
+    // SCSS of the collapses, they're display with flexbox into a row and there is a space between them.
     &__collapse {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding-bottom: 30px;
-        // padding-bottom: 20px;
         // Responsive, at 450px and under the display become column instead of row.
         @include medium-mobile {
             flex-direction: column;
         }
-        // Sass of each element who contain each collapse. The width is set then the responsive change the with at 450px and under.
+        // SCSS of each element who contain each collapse. The width is set then the responsive change the with at 450px and under.
         &__element{
             width: 47%;
             height: 20%;

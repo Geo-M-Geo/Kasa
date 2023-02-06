@@ -2,12 +2,12 @@
 @import'../../sass/Utils/mixin';
 
 
-// Sass of the Error's main container that is display with flex-box 
+// SCSS of the Error's main container that is display with flex-box 
 .error-container{
         min-height: 70vh;
         display:flex;
         flex-direction: column;
-/* Sass of the top contain which set height, the margins and how its display
+/* SCSS of the top contain which set height, the margins and how its display
      with flex-box of the error's image and the title. */
     &__top{
         display:flex;
@@ -15,7 +15,7 @@
         justify-content: space-around;
         min-height: 45vh;
         margin: 0px auto 0 auto;
-        /* Sass of the error's image. It set the margin to center the image and the width.
+        /* SCSS of the error's image. It set the margin to center the image and the width.
              The responsive adapt the image at two different sizes */
         &__image{
             margin: 0 auto 0 auto;
@@ -31,7 +31,7 @@
                 padding-top: 10%;
             };
         }
-        // Sass of the title. It set the margin, change the color, the size and align the text in the center
+        // SCSS of the title. It set the margin, change the color, the size and align the text in the center
         &__title{
             margin: 0 auto 40px auto;
             color:$tertiary-color;
@@ -53,7 +53,7 @@
             };
         }
     }
-    // Sass of the Link. It set the magin to auto to center it, set the color and the font size.
+    // SCSS of the Link. It set the magin to auto to center it, set the color and the font size.
     &__link{
         margin: auto;
         color:$tertiary-color;

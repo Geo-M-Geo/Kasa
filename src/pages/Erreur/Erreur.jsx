@@ -6,13 +6,13 @@ import'../Erreur/Erreur.scss';
 function Erreur() {
     return ( 
         <div className='error-container'>
-                <div className='error-container__top'>
-                        <img className='error-container__top__image' src={Error} alt="Erreur page introuvable"/>
-                        <h3 className='error-container__top__title'>Oups! La page que <span> vous demandez n'existe pas.</span></h3> 
-                </div>
-                <Link className='error-container__link' to="/">Retournez sur la page d'accueil</Link>
+             <div className='error-container__top'>
+                <img className='error-container__top__image' src={Error} alt="Erreur page introuvable"/>
+                <h3 className='error-container__top__title'>Oups! La page que <span> vous demandez n'existe pas.</span></h3> 
+             </div>
+        <Link className='error-container__link' to="/">Retournez sur la page d'accueil</Link>
         </div>
-        )
+    )
 };
 export default Erreur
 

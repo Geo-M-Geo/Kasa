@@ -13,22 +13,22 @@
     @include large-tablet {
         height: 180px;
     };
-        // Sass of the logo. The padding is set to lower the image.
-        &__logo{
-            padding-top:66px;
-        }
-        // Sass of the title of the footer component with his responsive
-        &__title{
-            color: $primary-color;
-            font-size: 24px;
-            margin: 0;
-            padding-top:2%;
-            // Two responsive size are set the change the font size to make it more responsive.
-            @include large-tablet {
-                font-size: 16px;
-            };
-            @include small-tablet {
-                font-size: 14px;
-            };
-        }
+    // Sass of the logo. The padding is set to lower the image.
+    &__logo{
+        padding-top:66px;
+    }
+    // Sass of the title of the footer component with his responsive
+    &__title{
+        color: $primary-color;
+        font-size: 24px;
+        margin: 0;
+        padding-top:2%;
+        // Two responsive size are set the change the font size to make it more responsive.
+        @include large-tablet {
+            font-size: 16px;
+        };
+        @include small-tablet {
+            font-size: 14px;
+        };
+    }
 }
